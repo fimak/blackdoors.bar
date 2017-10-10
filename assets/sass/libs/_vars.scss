@@ -23,6 +23,7 @@
 // Font.
 	$font: (
 		family:				('Roboto', Helvetica, sans-serif),
+		familyGotham:		('GothamProRegular', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				100,
 		weight-bold:		300
@@ -36,6 +37,7 @@
 		fg:					rgba(255,255,255,0.75),
 		fg-light:			rgba(255,255,255,0.5),
 		fg-lighter:			rgba(255,255,255,0.15),
+		button-lighter:			rgba(255,255,255,0.3),
 		border:				rgba(255,255,255,0.3),
 		border-bg:			rgba(255,255,255,0.075),
 		border2:			rgba(255,255,255,0.5),
@@ -44,5 +46,7 @@
 		accent2:			#272833,
 		accent2-transparent:rgba(39,40,51,0.965),
 		accent3:			#5480f1,
-		accent4:			#39c088
+		accent4:			#39c088,
+		logo-gold:			rgb(187, 164, 54),
+        material-black:     #212121,
 	);

@@ -1,0 +1,28 @@
+{
+  "name": "blackdoors.bar",
+  "version": "1.0.0",
+  "description": ",-----.,--.                  ,--. ,---.   ,--.,------.  ,------.     '  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---'     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \\  :|  `--,      '  '--'\\|  |' '-' ''  ''  '\\ `-' | .'  /   |  ||  '--'  /|  `---.      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'     -----------------------------------------------------------------",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fimak/blackdoors.bar.git"
+  },
+  "keywords": [
+    "blackdoors",
+    "bar"
+  ],
+  "author": "aufimtsev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fimak/blackdoors.bar/issues"
+  },
+  "homepage": "https://github.com/fimak/blackdoors.bar#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
