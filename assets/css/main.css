@@ -2479,27 +2479,65 @@ body.is-touch #banner {
 #one.spotlight .goto-next:before {
   background-image: url("images/arrow-black.svg"); }
 
-#two.spotlight:before {
-  background-image: none;
-  background: rgba(255, 255, 255, 0.9); }
-
-#two.spotlight.bottom .content {
-  border-top-width: 0;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 6em;
+#two.banner {
+  background-attachment: fixed;
+  background-color: #272833;
+  background-image: url("../../images/blackdoors-background.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  position: relative;
   text-align: center;
-  vertical-align: middle;
-  display: inline-block; }
-  #two.spotlight.bottom .content header {
+  z-index: 21; }
+  #two.banner:before {
+    content: '';
     display: inline-block;
-    vertical-align: middle; }
-    #two.spotlight.bottom .content header h2 {
-      color: #212121;
-      font-size: 2.5em;
-      margin: 0;
-      text-transform: uppercase;
-      font-weight: bold; }
+    height: 100vh;
+    vertical-align: middle;
+    width: 1%; }
+  #two.banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  #two.banner .content {
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 95%;
+    padding: 6em;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 1; }
+    #two.banner .content header {
+      display: inline-block;
+      vertical-align: middle; }
+      #two.banner .content header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 400; }
+      #two.banner .content header p {
+        margin: 0.5em 0 0 0;
+        top: 0; }
+    #two.banner .content .image {
+      border-radius: 100%;
+      display: inline-block;
+      height: 18em;
+      margin-left: 3em;
+      vertical-align: middle;
+      width: 18em; }
+      #two.banner .content .image img {
+        display: block;
+        width: 100%; }
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
