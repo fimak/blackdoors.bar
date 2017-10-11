@@ -1449,7 +1449,7 @@ body.landing {
     }
 
     &:after {
-        @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("images/overlay.png");'));
+        @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
         content: '';
         display: block;
         height: 100%;
@@ -1756,7 +1756,7 @@ body.is-touch {
     &.banner {
         background-attachment: fixed;
         background-color: _palette(accent2);
-        background-image: url("../../images/blackdoors-background.jpg");
+        background-image: url("../../images/blackdoors-atmosphere.jpg");
         background-position: center center;
         background-size: cover;
         box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -1764,7 +1764,6 @@ body.is-touch {
         position: relative;
         text-align: center;
         z-index: (_misc(max-spotlight) + 1);
-        //border-top: 0.35em solid rgba(84, 128, 241, 0.75);
 
         &:before {
             content: '';
@@ -1775,7 +1774,7 @@ body.is-touch {
         }
 
         &:after {
-            @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("images/overlay.png");'));
+            @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
             content: '';
             display: block;
             height: 100%;
@@ -1791,7 +1790,7 @@ body.is-touch {
             max-width: 95%;
             padding: 4em;
             position: relative;
-            text-align: left;
+            text-align: right;
             vertical-align: middle;
             z-index: 1;
 
@@ -1807,6 +1806,7 @@ body.is-touch {
                 }
 
                 p {
+                    padding-left: 5em;
                     margin: (_size(element-margin) * 0.25) 0 0 0;
                     top: 0;
                 }
@@ -1833,6 +1833,16 @@ body.is-touch {
 
     .container {
 
+        header {
+
+            h2 {
+                font-size: 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+
         p {
             width: 45%;
             margin: 0 auto;
@@ -1843,6 +1853,7 @@ body.is-touch {
             position: relative;
             width: 40%;
             text-align: left;
+            padding-left: 2em;
         }
 
         form {
@@ -1850,6 +1861,15 @@ body.is-touch {
                 margin: 2em;
             }
         }
+    }
+}
+
+#five {
+    padding: 0;
+    background: #272833;
+
+    iframe {
+        opacity: 0.1;
     }
 }
 
