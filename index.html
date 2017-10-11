@@ -138,19 +138,21 @@
     </section>
 
     <!-- Three -->
-    <section id="three" class="spotlight style3 left">
-        <span class="image fit main bottom"><img src="images/blackdoors-background.jpg" alt=""/></span>
+    <section id="three" class="banner">
         <div class="content">
+            <span class="image"><img src="images/ksenya.jpg" alt="" /></span>
             <header>
-                <h2>О предоставляемых услугах</h2>
-                <p>У нас вкусная еда и крутая аппаратура</p>
+                <h2>Друзья, мы готовы заявить со <br/>
+                    всей ответственностью &mdash; <br/>
+                    на нас можно положиться.</h2>
+                <p>
+                    Команда Black Doors- это профессионалы и настоящие <br/>
+                    фанатики своего дела, чья задача - сделать ваш отдых <br/>
+                    максимально ярким и комфортным. <br/>
+                    Доверьте нам организацию своего праздника, и будьте <br/>
+                    уверены - ваше торжество в надёжных руках.
+                </p>
             </header>
-            <p>Караоке-ресторан blackdoors предоставляет подземный паркинг,
-                лаундж зону, самый большой в городе каталог песен, професиональное
-                оборудование которое выдает студийное звучание, индивидуальный подход к каждому мероприятию.</p>
-            <ul class="actions">
-                <li><a href="#five" class="button green scrolly">Заказать банкет</a></li>
-            </ul>
         </div>
         <a href="#four" class="goto-next scrolly">Next</a>
     </section>
@@ -162,16 +164,24 @@
                 <h2>Внимания акция!</h2>
                 <p>Специальные условия для тех кто оставит заявку сегодня</p>
             </header>
-            <div class="box alt">
-                <div class="row uniform">
-
+            <p>
+                Успейте заказать банкет и мы предоставим специальную цену:
+            </p>
+            <ul>
+                <li>На аренду зала</li>
+                <li>Специальное новогоднее предложение по барной карте</li>
+            </ul>
+            <form method="post" action="#" class="container 50%">
+                <div class="text-field">
+                    <input type="text" name="email" id="name" placeholder="Ваше имя"/>
                 </div>
-            </div>
-            <footer class="major">
-                <ul class="actions">
-                    <li><a href="#five" class="button pink">Заказать банкет</a></li>
-                </ul>
-            </footer>
+                <div class="text-field">
+                    <input type="email" name="email" id="email" placeholder="Ваш телефон"/>
+                </div>
+                <div class="">
+                    <input class="button pink" type="submit" value="Заказать банкет"/>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -179,17 +189,9 @@
     <section id="five" class="wrapper style2 special fade">
         <div class="container">
             <header>
-                <h2>Забронировать банкет</h2>
+                <h2>Здесь будет карта</h2>
                 <p>Оставьте ваш номер телефона и мы вам перезвоним</p>
             </header>
-            <div class="blackdoors-clock"></div>
-            <form method="post" action="#" class="container 50%">
-                <div class="row uniform 50%">
-                    <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email"
-                                                        placeholder="Ваш телефон"/></div>
-                    <div class="4u$ 12u$(xsmall)"><input type="submit" value="Заказать" class="fit special"/></div>
-                </div>
-            </form>
         </div>
     </section>
 
@@ -223,6 +225,7 @@
 <!--[if lte IE 8]>
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="node_modules/owl-carousel-2/owl.carousel.min.js"></script>
+<script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

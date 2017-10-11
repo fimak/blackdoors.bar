@@ -2497,10 +2497,10 @@ body.is-touch #banner {
     vertical-align: middle;
     width: 1%; }
   #two.banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
     content: '';
     display: block;
     height: 100%;
@@ -2512,7 +2512,7 @@ body.is-touch #banner {
     display: inline-block;
     margin-right: 1%;
     max-width: 95%;
-    padding: 6em;
+    padding: 4em;
     position: relative;
     text-align: right;
     vertical-align: middle;
@@ -2538,6 +2538,79 @@ body.is-touch #banner {
       #two.banner .content .image img {
         display: block;
         width: 100%; }
+
+#three.banner {
+  background-attachment: fixed;
+  background-color: #272833;
+  background-image: url("../../images/blackdoors-background.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 21; }
+  #three.banner:before {
+    content: '';
+    display: inline-block;
+    height: 100vh;
+    vertical-align: middle;
+    width: 1%; }
+  #three.banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  #three.banner .content {
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 95%;
+    padding: 4em;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    z-index: 1; }
+    #three.banner .content header {
+      display: inline-block;
+      vertical-align: middle; }
+      #three.banner .content header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 400; }
+      #three.banner .content header p {
+        margin: 0.5em 0 0 0;
+        top: 0; }
+    #three.banner .content .image {
+      border-radius: 100%;
+      display: inline-block;
+      height: 18em;
+      margin-right: 3em;
+      vertical-align: middle;
+      width: 18em; }
+      #three.banner .content .image img {
+        display: block;
+        width: 100%; }
+
+#four .container p {
+  width: 45%;
+  margin: 0 auto; }
+
+#four .container ul {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  text-align: left; }
+
+#four .container form .text-field {
+  margin: 2em; }
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
