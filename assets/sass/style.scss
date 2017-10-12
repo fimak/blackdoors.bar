@@ -120,8 +120,7 @@ input[type="button"],
         width: 80%;
         left: 10%;
         text-align: center;
-        line-height: 1em;
-        padding-top: 1.5em;
+        line-height: 1.5em;
         overflow: hidden;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
@@ -129,7 +128,7 @@ input[type="button"],
 
         .benefit {
             width: 23%;
-            padding: 0 1%;
+            padding: 1.5em 1% 1em;
             float: left;
 
             .banner-icon {
@@ -142,46 +141,69 @@ input[type="button"],
 
 #one {
     &.banner {
+        background-attachment: fixed;
+        background-color: _palette(accent2);
+        background-image: url("../../images/pic04.jpg");
+        background-position: center center;
+        background-size: cover;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+        min-height: 100vh;
+        position: relative;
+        text-align: center;
+        z-index: (_misc(max-spotlight) + 1);
 
         &:before {
-            background-image: none;
-            background: rgba(255,255,255,0.9);
+            content: '';
+            display: inline-block;
+            height: 100vh;
+            vertical-align: middle;
+            width: 1%;
         }
 
-        &.bottom {
-            .content {
-                border-top-width: 0;
-                height: 100%;
-                background: rgba(255,255,255,0.9);
-                padding: 6em;
-                text-align: center;
-                vertical-align: middle;
-                display: inline-block;
+        &:after {
+            @include vendor('background-image', ('linear-gradient(top, #{_palette(banner-bg)}, #{_palette(banner-bg)})', 'url("images/overlay.png");'));
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
 
-                header {
-                    display: inline-block;
-                    vertical-align: middle;
+        .content {
+            display: inline-block;
+            margin-right: 1%;
+            max-width: 95%;
+            padding: 4em;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            z-index: 1;
 
-                    h2 {
-                        color: _palette(material-black);
-                        font-size: 2.5em;
-                        margin: 0;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                    }
+            header {
+                display: block;
+                padding: 0.5em 1.5em;
+                background: rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.75);
+
+                h2 {
+                    font-size: 2.5em;
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
                 }
 
                 .benefit-wrapper {
-                    color: _palette(material-black);
+                    margin: 0 auto;
                     width: 80%;
                     text-align: center;
                     line-height: 1em;
-                    margin: 2.5em auto;
                     overflow: hidden;
 
                     .benefit {
                         width: 23%;
-                        padding: 0 1%;
+                        padding: 1em 1%;
                         float: left;
 
                         .banner-icon {
@@ -190,28 +212,23 @@ input[type="button"],
                         }
                     }
                 }
-
-                .carousel {
-                    padding-top: 1.5em;
-
-                    p {
-                        margin-top: 0.5em;
-                        color: _palette(material-black);
-                    }
-                }
             }
-        }
 
-        .goto-next {
+            .carousel {
+                padding-top: 1.5em;
 
-            &:before {
-                background-image: url('images/arrow-black.svg');
+                p {
+                    margin-top: 0.5em;
+                    color: _palette(fg);
+                    background: rgba(0, 0, 0, 0.5);
+                    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.75);
+                }
             }
         }
     }
 }
 
-#half-two {
+#two {
     &.banner {
         background-attachment: fixed;
         background-color: _palette(accent2);
@@ -249,7 +266,7 @@ input[type="button"],
             max-width: 95%;
             padding: 4em;
             position: relative;
-            text-align: right;
+            text-align: center;
             vertical-align: middle;
             z-index: 1;
 
@@ -265,7 +282,6 @@ input[type="button"],
                 }
 
                 p {
-                    padding-left: 5em;
                     margin: (_size(element-margin) * 0.25) 0 0 0;
                     top: 0;
                 }
@@ -283,7 +299,7 @@ input[type="button"],
     }
 }
 
-#two {
+#three {
     &.banner {
         background-attachment: fixed;
         background-color: _palette(accent2);
@@ -359,7 +375,7 @@ input[type="button"],
     }
 }
 
-#three {
+#four {
     &.banner {
         background-attachment: fixed;
         background-color: _palette(accent2);
@@ -436,7 +452,7 @@ input[type="button"],
     }
 }
 
-#four {
+#five {
 
     .container {
 
@@ -471,7 +487,7 @@ input[type="button"],
     }
 }
 
-#five {
+#six {
     padding: 0;
     background: #272833;
 

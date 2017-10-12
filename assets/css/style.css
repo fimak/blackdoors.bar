@@ -2796,68 +2796,23 @@ input[type="button"].green:hover,
     width: 80%;
     left: 10%;
     text-align: center;
-    line-height: 1em;
-    padding-top: 1.5em;
+    line-height: 1.5em;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
     z-index: 1; }
     #banner .benefit-wrapper .benefit {
       width: 23%;
-      padding: 0 1%;
+      padding: 1.5em 1% 1em;
       float: left; }
       #banner .benefit-wrapper .benefit .banner-icon {
         font-size: 3em;
         margin-bottom: 0.25em; }
 
-#one.banner:before {
-  background-image: none;
-  background: rgba(255, 255, 255, 0.9); }
-
-#one.banner.bottom .content {
-  border-top-width: 0;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 6em;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block; }
-  #one.banner.bottom .content header {
-    display: inline-block;
-    vertical-align: middle; }
-    #one.banner.bottom .content header h2 {
-      color: #212121;
-      font-size: 2.5em;
-      margin: 0;
-      text-transform: uppercase;
-      font-weight: bold; }
-  #one.banner.bottom .content .benefit-wrapper {
-    color: #212121;
-    width: 80%;
-    text-align: center;
-    line-height: 1em;
-    margin: 2.5em auto;
-    overflow: hidden; }
-    #one.banner.bottom .content .benefit-wrapper .benefit {
-      width: 23%;
-      padding: 0 1%;
-      float: left; }
-      #one.banner.bottom .content .benefit-wrapper .benefit .banner-icon {
-        font-size: 3em;
-        margin-bottom: 0.25em; }
-  #one.banner.bottom .content .carousel {
-    padding-top: 1.5em; }
-    #one.banner.bottom .content .carousel p {
-      margin-top: 0.5em;
-      color: #212121; }
-
-#one.banner .goto-next:before {
-  background-image: url("images/arrow-black.svg"); }
-
-#half-two.banner {
+#one.banner {
   background-attachment: fixed;
   background-color: #272833;
-  background-image: url("../../images/blackdoors-atmosphere2.jpg");
+  background-image: url("../../images/pic04.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -2865,17 +2820,17 @@ input[type="button"].green:hover,
   position: relative;
   text-align: center;
   z-index: 21; }
-  #half-two.banner:before {
+  #one.banner:before {
     content: '';
     display: inline-block;
     height: 100vh;
     vertical-align: middle;
     width: 1%; }
-  #half-two.banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+  #one.banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
     content: '';
     display: block;
     height: 100%;
@@ -2883,37 +2838,50 @@ input[type="button"].green:hover,
     position: absolute;
     top: 0;
     width: 100%; }
-  #half-two.banner .content {
+  #one.banner .content {
     display: inline-block;
     margin-right: 1%;
     max-width: 95%;
     padding: 4em;
     position: relative;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
     z-index: 1; }
-    #half-two.banner .content header {
-      display: inline-block;
-      vertical-align: middle; }
-      #half-two.banner .content header h2 {
+    #one.banner .content header {
+      display: block;
+      padding: 0.5em 1.5em;
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.75); }
+      #one.banner .content header h2 {
         font-size: 2.5em;
         margin: 0;
         text-transform: uppercase;
-        font-weight: 400; }
-      #half-two.banner .content header p {
-        padding-left: 5em;
-        margin: 0.5em 0 0 0;
-        top: 0; }
-    #half-two.banner .content .carousel {
-      padding-top: 4em; }
-      #half-two.banner .content .carousel p {
+        font-weight: bold; }
+      #one.banner .content header .benefit-wrapper {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        line-height: 1em;
+        overflow: hidden; }
+        #one.banner .content header .benefit-wrapper .benefit {
+          width: 23%;
+          padding: 1em 1%;
+          float: left; }
+          #one.banner .content header .benefit-wrapper .benefit .banner-icon {
+            font-size: 3em;
+            margin-bottom: 0.25em; }
+    #one.banner .content .carousel {
+      padding-top: 1.5em; }
+      #one.banner .content .carousel p {
         margin-top: 0.5em;
-        color: #212121; }
+        color: rgba(255, 255, 255, 0.75);
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.75); }
 
 #two.banner {
   background-attachment: fixed;
   background-color: #272833;
-  background-image: url("../../images/blackdoors-background.jpg");
+  background-image: url("../../images/blackdoors-atmosphere2.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -2945,7 +2913,7 @@ input[type="button"].green:hover,
     max-width: 95%;
     padding: 4em;
     position: relative;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
     z-index: 1; }
     #two.banner .content header {
@@ -2959,21 +2927,16 @@ input[type="button"].green:hover,
       #two.banner .content header p {
         margin: 0.5em 0 0 0;
         top: 0; }
-    #two.banner .content .image {
-      border-radius: 100%;
-      display: inline-block;
-      height: 18em;
-      margin-left: 3em;
-      vertical-align: middle;
-      width: 18em; }
-      #two.banner .content .image img {
-        display: block;
-        width: 100%; }
+    #two.banner .content .carousel {
+      padding-top: 4em; }
+      #two.banner .content .carousel p {
+        margin-top: 0.5em;
+        color: #212121; }
 
 #three.banner {
   background-attachment: fixed;
   background-color: #272833;
-  background-image: url("../../images/blackdoors-party.jpg");
+  background-image: url("../../images/blackdoors-background.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3017,44 +2980,104 @@ input[type="button"].green:hover,
         text-transform: uppercase;
         font-weight: 400; }
       #three.banner .content header p {
-        padding-left: 5em;
         margin: 0.5em 0 0 0;
         top: 0; }
     #three.banner .content .image {
       border-radius: 100%;
       display: inline-block;
       height: 18em;
-      margin-right: 3em;
+      margin-left: 3em;
       vertical-align: middle;
       width: 18em; }
       #three.banner .content .image img {
         display: block;
         width: 100%; }
 
-#four .container header h2 {
+#four.banner {
+  background-attachment: fixed;
+  background-color: #272833;
+  background-image: url("../../images/blackdoors-party.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 21; }
+  #four.banner:before {
+    content: '';
+    display: inline-block;
+    height: 100vh;
+    vertical-align: middle;
+    width: 1%; }
+  #four.banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  #four.banner .content {
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 95%;
+    padding: 4em;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 1; }
+    #four.banner .content header {
+      display: inline-block;
+      vertical-align: middle; }
+      #four.banner .content header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 400; }
+      #four.banner .content header p {
+        padding-left: 5em;
+        margin: 0.5em 0 0 0;
+        top: 0; }
+    #four.banner .content .image {
+      border-radius: 100%;
+      display: inline-block;
+      height: 18em;
+      margin-right: 3em;
+      vertical-align: middle;
+      width: 18em; }
+      #four.banner .content .image img {
+        display: block;
+        width: 100%; }
+
+#five .container header h2 {
   font-size: 2.5em;
   margin: 0;
   text-transform: uppercase;
   font-weight: 400; }
 
-#four .container p {
+#five .container p {
   width: 45%;
   margin: 0 auto; }
 
-#four .container ul {
+#five .container ul {
   display: inline-block;
   position: relative;
   width: 40%;
   text-align: left;
   padding-left: 2em; }
 
-#four .container form .text-field {
+#five .container form .text-field {
   margin: 2em; }
 
-#five {
+#six {
   padding: 0;
   background: #272833; }
-  #five iframe {
+  #six iframe {
     opacity: 0.1; }
 
 /* XLarge */

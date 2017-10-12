@@ -303,19 +303,16 @@
 
         // Banner.
         var $banner = $('#banner')
+        $banner._parallax()
 
-        $banner
-            ._parallax()
+        var $one = $('#one')
+        $one._parallax()
 
         var $two = $('#two')
-
-        $two
-            ._parallax()
+        $two._parallax()
 
         var $three = $('#three')
-
-        $three
-            ._parallax()
+        $three._parallax()
 
     })
 
@@ -332,12 +329,9 @@
                     items: 3
                 },
                 1000: {
-                    items: 5
+                    items: 3
                 }
-            },
-            autoplay: true,
-            autoplayTimeout: 2500,
-            autoplayHoverPause: true
+            }
         })
 
         //Mask
