@@ -1,7 +1,6 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'libs/fonts';
 @import url('font-awesome.min.css');
 @import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
@@ -1449,7 +1448,7 @@ body.landing {
     }
 
     &:after {
-        @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
+        @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-h)}, #{_palette(bg-transparent-h)})', 'url("images/overlay.png");'));
         content: '';
         display: block;
         height: 100%;
@@ -1468,6 +1467,8 @@ body.landing {
         text-align: center;
         vertical-align: middle;
         z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
 
         header {
             display: inline-block;
@@ -1480,7 +1481,7 @@ body.landing {
                 font-weight: 400;
 
                 .company {
-                    font-family: _font(familyGotham);
+                    font-family: _font(family);
 
                     .gold-letter {
                         margin-left: 0.1em;
