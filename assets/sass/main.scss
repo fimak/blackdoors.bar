@@ -2,10 +2,13 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import url('font-awesome.min.css');
-@import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
-
+/*
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 @import "libs/skel";
 
@@ -20,7 +23,7 @@
 @include skel-layout((
         reset: 'full',
         boxModel: 'border',
-        grid: (gutters: 2.5em),
+        grid: ( gutters: 2.5em ),
         conditionals: true,
         containers: 70em,
         breakpoints: (
@@ -39,7 +42,7 @@
 
     &:before {
         color: $bg !important;
-        text-shadow: $size 0 0 $fg,
+        text-shadow:	$size 0 0 $fg,
                 ($size * -1) 0 0 $fg,
         0 $size 0 $fg,
         0 ($size * -1) 0 $fg;
@@ -204,60 +207,28 @@ pre {
 // Spinner
 
 @include keyframes('spinner-show') {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @include keyframes('spinner-hide') {
-    0% {
-        color: _palette(fg-lighter);
-        z-index: _misc(z-index-overlay) + 1;
-        @include vendor('transform', 'scale(1) rotate(0deg)');
-    }
-    99% {
-        color: _palette(bg);
-        z-index: _misc(z-index-overlay) + 1;
-        @include vendor('transform', 'scale(0.5) rotate(360deg)');
-    }
-    100% {
-        color: _palette(bg);
-        z-index: -1;
-        @include vendor('transform', 'scale(0.5) rotate(360deg)');
-    }
+    0% { color: _palette(fg-lighter); z-index: _misc(z-index-overlay) + 1; @include vendor('transform', 'scale(1) rotate(0deg)'); }
+    99% { color: _palette(bg); z-index: _misc(z-index-overlay) + 1; @include vendor('transform', 'scale(0.5) rotate(360deg)'); }
+    100% { color: _palette(bg); z-index: -1; @include vendor('transform', 'scale(0.5) rotate(360deg)'); }
 }
 
 @include keyframes('spinner-rotate') {
-    0% {
-        @include vendor('transform', 'scale(1) rotate(0deg)');
-    }
-    100% {
-        @include vendor('transform', 'scale(1) rotate(360deg)');
-    }
+    0% { @include vendor('transform', 'scale(1) rotate(0deg)'); }
+    100% { @include vendor('transform', 'scale(1) rotate(360deg)'); }
 }
 
 // Overlay
 
 @include keyframes('overlay-hide') {
-    0% {
-        opacity: 1;
-        z-index: _misc(z-index-overlay);
-    }
-    15% {
-        opacity: 1;
-        z-index: _misc(z-index-overlay);
-    }
-    99% {
-        opacity: 0;
-        z-index: _misc(z-index-overlay);
-    }
-    100% {
-        opacity: 0;
-        z-index: -1;
-    }
+    0% { opacity: 1; z-index: _misc(z-index-overlay); }
+    15% { opacity: 1; z-index: _misc(z-index-overlay); }
+    99% { opacity: 0; z-index: _misc(z-index-overlay); }
+    100% { opacity: 0; z-index: -1; }
 }
 
 body.landing {
@@ -915,8 +886,8 @@ input[type="button"],
     white-space: nowrap;
 
     &:hover, &:active {
-        box-shadow: inset 0 0 0 1px _palette(button-lighter);
-        color: _palette(fg-bold) !important;
+        box-shadow: inset 0 0 0 1px _palette(accent1);
+        color: _palette(accent1) !important;
     }
 
     &:active {
@@ -955,28 +926,6 @@ input[type="button"],
         &:active {
             background-color: darken(_palette(accent1), 5);
         }
-    }
-
-    &.blue {
-        box-shadow: inset 0 0 0 1px #5480f1;
-        color: #5480f1 !important;
-    }
-
-    &.green {
-        box-shadow: inset 0 0 0 1px #39c088;
-        color: #39c088 !important;
-    }
-
-    &.pink {
-        box-shadow: inset 0 0 0 1px #e44c65;
-        color: #e44c65 !important;
-    }
-
-    &.pink:hover,
-    &.blue:hover,
-    &.green:hover {
-        box-shadow: inset 0 0 0 1px #ffffff;
-        color: #ffffff !important;
     }
 
     &.disabled,
@@ -1025,10 +974,10 @@ input[type="button"],
 /* Spotlight */
 
 .spotlight {
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    background-attachment:	fixed;
+    background-position:	center center;
+    background-size:		cover;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -1281,14 +1230,14 @@ body.is-touch {
 .dropotron {
     background: _palette(accent2-transparent);
     border-radius: _size(border-radius);
-    box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
+    box-shadow: 0 0.075em 0.35em 0 rgba(0,0,0,0.125);
     list-style: none;
     margin-top: calc(-0.25em + 1px);
     min-width: 12em;
     padding: 0.25em 0;
 
     > li {
-        border-top: solid 1px rgba(255, 255, 255, 0.035);
+        border-top: solid 1px rgba(255,255,255,0.035);
         padding: 0;
 
         a, span {
@@ -1344,7 +1293,7 @@ body.landing {
 
 #header {
     background: _palette(accent2-transparent);
-    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.25);
     cursor: default;
     height: 3.5em;
     left: 0;
@@ -1361,11 +1310,6 @@ body.landing {
         margin: 0;
         position: absolute;
         top: 0;
-
-        #logo {
-            width: 200px;
-            position: fixed;
-        }
     }
 
     nav {
@@ -1430,10 +1374,10 @@ body.landing {
 #banner {
     background-attachment: fixed;
     background-color: _palette(accent2);
-    background-image: url("../../images/blackdoors-atmosphere.jpg");
+    background-image: url('../../images/banner.jpg');
     background-position: center center;
     background-size: cover;
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
     min-height: 100vh;
     position: relative;
     text-align: center;
@@ -1448,7 +1392,7 @@ body.landing {
     }
 
     &:after {
-        @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-h)}, #{_palette(bg-transparent-h)})', 'url("images/overlay.png");'));
+        @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("images/overlay.png");'));
         content: '';
         display: block;
         height: 100%;
@@ -1464,11 +1408,9 @@ body.landing {
         max-width: 95%;
         padding: $size-wrapper-pad-tb;
         position: relative;
-        text-align: center;
+        text-align: right;
         vertical-align: middle;
         z-index: 1;
-        background: rgba(0, 0, 0, 0.5);
-        box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
 
         header {
             display: inline-block;
@@ -1477,49 +1419,11 @@ body.landing {
             h2 {
                 font-size: 2.5em;
                 margin: 0;
-                text-transform: uppercase;
-                font-weight: 400;
-
-                .company {
-                    font-family: _font(family);
-
-                    .gold-letter {
-                        margin-left: 0.1em;
-                        color: _palette(logo-gold);
-
-                        &:before {
-                            content: '';
-                            display: inline;
-                            border-left: 2px solid _palette(logo-gold);
-                            vertical-align: text-bottom;
-                        }
-                    }
-                }
             }
 
             p {
                 margin: (_size(element-margin) * 0.25) 0 0 0;
                 top: 0;
-            }
-        }
-
-        .benefit-wrapper {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 1em;
-            margin-top: 2.5em;
-            overflow: hidden;
-
-            .benefit {
-                width: 23%;
-                padding: 0 1%;
-                float: left;
-
-                .banner-icon {
-                    font-size: 3em;
-                    margin-bottom: 0.25em;
-                }
             }
         }
 
@@ -1561,20 +1465,6 @@ body.is-touch {
         }
     }
 
-    .contacts {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 0.8em;
-        margin: 2em 0 2.5em 0;
-        padding: 0;
-        text-align: center;
-        list-style: none;
-
-        .phone {
-            color: inherit;
-            border-bottom: none;
-        }
-    }
-
     .copyright {
         color: _palette(fg-light);
         font-size: 0.8em;
@@ -1598,351 +1488,8 @@ body.is-touch {
 
             a {
                 color: inherit;
-                border-bottom: none;
             }
         }
-    }
-}
-
-/* Custom */
-
-#one {
-    &.spotlight {
-
-        &:before {
-            background-image: none;
-            background: rgba(255,255,255,0.9);
-        }
-
-        &.bottom {
-            .content {
-                border-top-width: 0;
-                height: 100%;
-                background: rgba(255,255,255,0.9);
-                padding: 6em;
-                text-align: center;
-                vertical-align: middle;
-                display: inline-block;
-
-                header {
-                    display: inline-block;
-                    vertical-align: middle;
-
-                    h2 {
-                        color: _palette(material-black);
-                        font-size: 2.5em;
-                        margin: 0;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                    }
-                }
-
-                .benefit-wrapper {
-                    color: _palette(material-black);
-                    width: 80%;
-                    text-align: center;
-                    line-height: 1em;
-                    margin: 2.5em auto;
-                    overflow: hidden;
-
-                    .benefit {
-                        width: 23%;
-                        padding: 0 1%;
-                        float: left;
-
-                        .banner-icon {
-                            font-size: 3em;
-                            margin-bottom: 0.25em;
-                        }
-                    }
-                }
-
-                .carousel {
-                    padding-top: 1.5em;
-
-                    p {
-                        margin-top: 0.5em;
-                        color: _palette(material-black);
-                    }
-                }
-            }
-        }
-
-        .goto-next {
-
-            &:before {
-                background-image: url('images/arrow-black.svg');
-            }
-        }
-    }
-}
-
-#half-two {
-    &.banner {
-        background-attachment: fixed;
-        background-color: _palette(accent2);
-        background-image: url("../../images/blackdoors-atmosphere2.jpg");
-        background-position: center center;
-        background-size: cover;
-        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-        min-height: 100vh;
-        position: relative;
-        text-align: center;
-        z-index: (_misc(max-spotlight) + 1);
-
-        &:before {
-            content: '';
-            display: inline-block;
-            height: 100vh;
-            vertical-align: middle;
-            width: 1%;
-        }
-
-        &:after {
-            @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
-            content: '';
-            display: block;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        .content {
-            display: inline-block;
-            margin-right: 1%;
-            max-width: 95%;
-            padding: 4em;
-            position: relative;
-            text-align: right;
-            vertical-align: middle;
-            z-index: 1;
-
-            header {
-                display: inline-block;
-                vertical-align: middle;
-
-                h2 {
-                    font-size: 2.5em;
-                    margin: 0;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                }
-
-                p {
-                    padding-left: 5em;
-                    margin: (_size(element-margin) * 0.25) 0 0 0;
-                    top: 0;
-                }
-            }
-
-            .carousel {
-                padding-top: 4em;
-
-                p {
-                    margin-top: 0.5em;
-                    color: _palette(material-black);
-                }
-            }
-        }
-    }
-}
-
-#two {
-    &.banner {
-        background-attachment: fixed;
-        background-color: _palette(accent2);
-        background-image: url("../../images/blackdoors-background.jpg");
-        background-position: center center;
-        background-size: cover;
-        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-        min-height: 100vh;
-        position: relative;
-        text-align: center;
-        z-index: (_misc(max-spotlight) + 1);
-
-        &:before {
-            content: '';
-            display: inline-block;
-            height: 100vh;
-            vertical-align: middle;
-            width: 1%;
-        }
-
-        &:after {
-            @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
-            content: '';
-            display: block;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        .content {
-            display: inline-block;
-            margin-right: 1%;
-            max-width: 95%;
-            padding: 4em;
-            position: relative;
-            text-align: right;
-            vertical-align: middle;
-            z-index: 1;
-
-            header {
-                display: inline-block;
-                vertical-align: middle;
-
-                h2 {
-                    font-size: 2.5em;
-                    margin: 0;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                }
-
-                p {
-                    margin: (_size(element-margin) * 0.25) 0 0 0;
-                    top: 0;
-                }
-            }
-
-            .image {
-                border-radius: 100%;
-                display: inline-block;
-                height: 18em;
-                margin-left: 3em;
-                vertical-align: middle;
-                width: 18em;
-
-                img {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-#three {
-    &.banner {
-        background-attachment: fixed;
-        background-color: _palette(accent2);
-        background-image: url("../../images/blackdoors-party.jpg");
-        background-position: center center;
-        background-size: cover;
-        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-        min-height: 100vh;
-        position: relative;
-        text-align: center;
-        z-index: (_misc(max-spotlight) + 1);
-
-        &:before {
-            content: '';
-            display: inline-block;
-            height: 100vh;
-            vertical-align: middle;
-            width: 1%;
-        }
-
-        &:after {
-            @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
-            content: '';
-            display: block;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        .content {
-            display: inline-block;
-            margin-right: 1%;
-            max-width: 95%;
-            padding: 4em;
-            position: relative;
-            text-align: right;
-            vertical-align: middle;
-            z-index: 1;
-
-            header {
-                display: inline-block;
-                vertical-align: middle;
-
-                h2 {
-                    font-size: 2.5em;
-                    margin: 0;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                }
-
-                p {
-                    padding-left: 5em;
-                    margin: (_size(element-margin) * 0.25) 0 0 0;
-                    top: 0;
-                }
-            }
-
-            .image {
-                border-radius: 100%;
-                display: inline-block;
-                height: 18em;
-                margin-right: 3em;
-                vertical-align: middle;
-                width: 18em;
-
-                img {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-#four {
-
-    .container {
-
-        header {
-
-            h2 {
-                font-size: 2.5em;
-                margin: 0;
-                text-transform: uppercase;
-                font-weight: 400;
-            }
-        }
-
-        p {
-            width: 45%;
-            margin: 0 auto;
-        }
-
-        ul {
-            display: inline-block;
-            position: relative;
-            width: 40%;
-            text-align: left;
-            padding-left: 2em;
-        }
-
-        form {
-            .text-field {
-                margin: 2em;
-            }
-        }
-    }
-}
-
-#five {
-    padding: 0;
-    background: #272833;
-
-    iframe {
-        opacity: 0.1;
     }
 }
 
@@ -2182,7 +1729,7 @@ body.is-touch {
     /* Spotlight */
 
     .spotlight {
-        box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
 
         .image.main {
             max-height: 60vh;
@@ -2209,7 +1756,7 @@ body.is-touch {
     /* Banner */
 
     #banner {
-        box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
         min-height: calc(100vh - 44px);
 
         &:before {
@@ -2252,7 +1799,7 @@ body.is-touch {
         width: 100%;
         z-index: _misc(z-index-base) + 1;
         background: _palette(accent2);
-        box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+        box-shadow: 0 0.125em 0.125em 0 rgba(0,0,0,0.125);
 
         .title {
             color: _palette(fg-bold);
@@ -2332,26 +1879,11 @@ body.is-touch {
                 font-weight: _font(weight-bold);
             }
 
-            .indent-1 {
-                display: inline-block;
-                width: 1.25em;
-            }
-            .indent-2 {
-                display: inline-block;
-                width: 2.5em;
-            }
-            .indent-3 {
-                display: inline-block;
-                width: 3.75em;
-            }
-            .indent-4 {
-                display: inline-block;
-                width: 5em;
-            }
-            .indent-5 {
-                display: inline-block;
-                width: 6.25em;
-            }
+            .indent-1 { display: inline-block; width: 1.25em; }
+            .indent-2 { display: inline-block; width: 2.5em; }
+            .indent-3 { display: inline-block; width: 3.75em; }
+            .indent-4 { display: inline-block; width: 5em; }
+            .indent-5 { display: inline-block; width: 6.25em; }
         }
     }
 
@@ -2478,90 +2010,6 @@ body.is-touch {
                 display: block;
                 margin: 0;
                 padding: 0;
-            }
-        }
-    }
-
-    /* Custom */
-    #banner {
-        .content {
-            .benefit-wrapper {
-                .benefit {
-                    width: 48%;
-                    padding: 1em 2%;
-                    .banner-icon {
-                        font-size: 1.5em;
-                    }
-                }
-            }
-        }
-    }
-
-    #one.spotlight.bottom {
-        .content {
-            header {
-                h2 {
-                    font-size: 1.5em;
-                }
-            }
-            .benefit-wrapper {
-                .benefit {
-                    width: 48%;
-                    padding: 1em 2%;
-                    .banner-icon {
-                        font-size: 1.5em;
-                    }
-                }
-            }
-        }
-    }
-
-    #two.banner {
-        .content {
-            padding: 4em 1em;
-            header {
-                h2 {
-                    font-size: 1.5em;
-                }
-            }
-            .image {
-                margin: 1em auto;
-            }
-        }
-    }
-
-    #half-two.banner {
-        .content {
-            padding: 4em 1em;
-            header {
-                h2 {
-                    font-size: 1.5em;
-                }
-            }
-        }
-    }
-
-    #three.banner {
-        .content {
-            padding: 4em 1em;
-            header {
-                h2 {
-                    font-size: 1.5em;
-                }
-            }
-        }
-    }
-
-    #four {
-        .container {
-            p {
-                width: 70%;
-            }
-            ul {
-                width: 70%;
-            }
-            input {
-                padding: 0 2.25em;
             }
         }
     }

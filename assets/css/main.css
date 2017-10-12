@@ -1,6 +1,10 @@
 @import url("font-awesome.min.css");
-@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+/*
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -1838,8 +1842,8 @@ input[type="button"],
   input[type="button"]:active,
   .button:hover,
   .button:active {
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-    color: #ffffff !important; }
+    box-shadow: inset 0 0 0 1px #e44c65;
+    color: #e44c65 !important; }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
@@ -1884,36 +1888,6 @@ input[type="button"],
     input[type="button"].special:active,
     .button.special:active {
       background-color: #e13652; }
-  input[type="submit"].blue,
-  input[type="reset"].blue,
-  input[type="button"].blue,
-  .button.blue {
-    box-shadow: inset 0 0 0 1px #5480f1;
-    color: #5480f1 !important; }
-  input[type="submit"].green,
-  input[type="reset"].green,
-  input[type="button"].green,
-  .button.green {
-    box-shadow: inset 0 0 0 1px #39c088;
-    color: #39c088 !important; }
-  input[type="submit"].pink,
-  input[type="reset"].pink,
-  input[type="button"].pink,
-  .button.pink {
-    box-shadow: inset 0 0 0 1px #e44c65;
-    color: #e44c65 !important; }
-  input[type="submit"].pink:hover, input[type="submit"].blue:hover, input[type="submit"].green:hover,
-  input[type="reset"].pink:hover,
-  input[type="reset"].blue:hover,
-  input[type="reset"].green:hover,
-  input[type="button"].pink:hover,
-  input[type="button"].blue:hover,
-  input[type="button"].green:hover,
-  .button.pink:hover,
-  .button.blue:hover,
-  .button.green:hover {
-    box-shadow: inset 0 0 0 1px #ffffff;
-    color: #ffffff !important; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
@@ -2255,9 +2229,6 @@ body.landing .dropotron.level-0 {
     margin: 0;
     position: absolute;
     top: 0; }
-    #header h1 #logo {
-      width: 200px;
-      position: fixed; }
   #header nav {
     position: absolute;
     right: 1em;
@@ -2297,7 +2268,7 @@ body.landing #header {
 #banner {
   background-attachment: fixed;
   background-color: #272833;
-  background-image: url("../../images/blackdoors-atmosphere.jpg");
+  background-image: url("../../images/banner.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -2312,10 +2283,10 @@ body.landing #header {
     vertical-align: middle;
     width: 1%; }
   #banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
     content: '';
     display: block;
     height: 100%;
@@ -2329,46 +2300,18 @@ body.landing #header {
     max-width: 95%;
     padding: 6em;
     position: relative;
-    text-align: center;
+    text-align: right;
     vertical-align: middle;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4); }
+    z-index: 1; }
     #banner .content header {
       display: inline-block;
       vertical-align: middle; }
       #banner .content header h2 {
         font-size: 2.5em;
-        margin: 0;
-        text-transform: uppercase;
-        font-weight: 400; }
-        #banner .content header h2 .company {
-          font-family: "Roboto", Helvetica, sans-serif; }
-          #banner .content header h2 .company .gold-letter {
-            margin-left: 0.1em;
-            color: #bba436; }
-            #banner .content header h2 .company .gold-letter:before {
-              content: '';
-              display: inline;
-              border-left: 2px solid #bba436;
-              vertical-align: text-bottom; }
+        margin: 0; }
       #banner .content header p {
         margin: 0.5em 0 0 0;
         top: 0; }
-    #banner .content .benefit-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 1em;
-      margin-top: 2.5em;
-      overflow: hidden; }
-      #banner .content .benefit-wrapper .benefit {
-        width: 23%;
-        padding: 0 1%;
-        float: left; }
-        #banner .content .benefit-wrapper .benefit .banner-icon {
-          font-size: 3em;
-          margin-bottom: 0.25em; }
     #banner .content .image {
       border-radius: 100%;
       display: inline-block;
@@ -2401,16 +2344,6 @@ body.is-touch #banner {
     #footer .icons .icon.alt:before {
       color: #272833 !important;
       text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5); }
-  #footer .contacts {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.8em;
-    margin: 2em 0 2.5em 0;
-    padding: 0;
-    text-align: center;
-    list-style: none; }
-    #footer .contacts .phone {
-      color: inherit;
-      border-bottom: none; }
   #footer .copyright {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
@@ -2429,256 +2362,7 @@ body.is-touch #banner {
         margin-left: 0;
         padding-left: 0; }
       #footer .copyright li a {
-        color: inherit;
-        border-bottom: none; }
-
-/* Custom */
-#one.spotlight:before {
-  background-image: none;
-  background: rgba(255, 255, 255, 0.9); }
-
-#one.spotlight.bottom .content {
-  border-top-width: 0;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 6em;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block; }
-  #one.spotlight.bottom .content header {
-    display: inline-block;
-    vertical-align: middle; }
-    #one.spotlight.bottom .content header h2 {
-      color: #212121;
-      font-size: 2.5em;
-      margin: 0;
-      text-transform: uppercase;
-      font-weight: bold; }
-  #one.spotlight.bottom .content .benefit-wrapper {
-    color: #212121;
-    width: 80%;
-    text-align: center;
-    line-height: 1em;
-    margin: 2.5em auto;
-    overflow: hidden; }
-    #one.spotlight.bottom .content .benefit-wrapper .benefit {
-      width: 23%;
-      padding: 0 1%;
-      float: left; }
-      #one.spotlight.bottom .content .benefit-wrapper .benefit .banner-icon {
-        font-size: 3em;
-        margin-bottom: 0.25em; }
-  #one.spotlight.bottom .content .carousel {
-    padding-top: 1.5em; }
-    #one.spotlight.bottom .content .carousel p {
-      margin-top: 0.5em;
-      color: #212121; }
-
-#one.spotlight .goto-next:before {
-  background-image: url("images/arrow-black.svg"); }
-
-#half-two.banner {
-  background-attachment: fixed;
-  background-color: #272833;
-  background-image: url("../../images/blackdoors-atmosphere2.jpg");
-  background-position: center center;
-  background-size: cover;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  min-height: 100vh;
-  position: relative;
-  text-align: center;
-  z-index: 21; }
-  #half-two.banner:before {
-    content: '';
-    display: inline-block;
-    height: 100vh;
-    vertical-align: middle;
-    width: 1%; }
-  #half-two.banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  #half-two.banner .content {
-    display: inline-block;
-    margin-right: 1%;
-    max-width: 95%;
-    padding: 4em;
-    position: relative;
-    text-align: right;
-    vertical-align: middle;
-    z-index: 1; }
-    #half-two.banner .content header {
-      display: inline-block;
-      vertical-align: middle; }
-      #half-two.banner .content header h2 {
-        font-size: 2.5em;
-        margin: 0;
-        text-transform: uppercase;
-        font-weight: 400; }
-      #half-two.banner .content header p {
-        padding-left: 5em;
-        margin: 0.5em 0 0 0;
-        top: 0; }
-    #half-two.banner .content .carousel {
-      padding-top: 4em; }
-      #half-two.banner .content .carousel p {
-        margin-top: 0.5em;
-        color: #212121; }
-
-#two.banner {
-  background-attachment: fixed;
-  background-color: #272833;
-  background-image: url("../../images/blackdoors-background.jpg");
-  background-position: center center;
-  background-size: cover;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  min-height: 100vh;
-  position: relative;
-  text-align: center;
-  z-index: 21; }
-  #two.banner:before {
-    content: '';
-    display: inline-block;
-    height: 100vh;
-    vertical-align: middle;
-    width: 1%; }
-  #two.banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  #two.banner .content {
-    display: inline-block;
-    margin-right: 1%;
-    max-width: 95%;
-    padding: 4em;
-    position: relative;
-    text-align: right;
-    vertical-align: middle;
-    z-index: 1; }
-    #two.banner .content header {
-      display: inline-block;
-      vertical-align: middle; }
-      #two.banner .content header h2 {
-        font-size: 2.5em;
-        margin: 0;
-        text-transform: uppercase;
-        font-weight: 400; }
-      #two.banner .content header p {
-        margin: 0.5em 0 0 0;
-        top: 0; }
-    #two.banner .content .image {
-      border-radius: 100%;
-      display: inline-block;
-      height: 18em;
-      margin-left: 3em;
-      vertical-align: middle;
-      width: 18em; }
-      #two.banner .content .image img {
-        display: block;
-        width: 100%; }
-
-#three.banner {
-  background-attachment: fixed;
-  background-color: #272833;
-  background-image: url("../../images/blackdoors-party.jpg");
-  background-position: center center;
-  background-size: cover;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  min-height: 100vh;
-  position: relative;
-  text-align: center;
-  z-index: 21; }
-  #three.banner:before {
-    content: '';
-    display: inline-block;
-    height: 100vh;
-    vertical-align: middle;
-    width: 1%; }
-  #three.banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  #three.banner .content {
-    display: inline-block;
-    margin-right: 1%;
-    max-width: 95%;
-    padding: 4em;
-    position: relative;
-    text-align: right;
-    vertical-align: middle;
-    z-index: 1; }
-    #three.banner .content header {
-      display: inline-block;
-      vertical-align: middle; }
-      #three.banner .content header h2 {
-        font-size: 2.5em;
-        margin: 0;
-        text-transform: uppercase;
-        font-weight: 400; }
-      #three.banner .content header p {
-        padding-left: 5em;
-        margin: 0.5em 0 0 0;
-        top: 0; }
-    #three.banner .content .image {
-      border-radius: 100%;
-      display: inline-block;
-      height: 18em;
-      margin-right: 3em;
-      vertical-align: middle;
-      width: 18em; }
-      #three.banner .content .image img {
-        display: block;
-        width: 100%; }
-
-#four .container header h2 {
-  font-size: 2.5em;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 400; }
-
-#four .container p {
-  width: 45%;
-  margin: 0 auto; }
-
-#four .container ul {
-  display: inline-block;
-  position: relative;
-  width: 40%;
-  text-align: left;
-  padding-left: 2em; }
-
-#four .container form .text-field {
-  margin: 2em; }
-
-#five {
-  padding: 0;
-  background: #272833; }
-  #five iframe {
-    opacity: 0.1; }
+        color: inherit; }
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
@@ -3013,37 +2697,4 @@ body.is-touch #banner {
         border-left: 0;
         display: block;
         margin: 0;
-        padding: 0; }
-  /* Custom */
-  #banner .content .benefit-wrapper .benefit {
-    width: 48%;
-    padding: 1em 2%; }
-    #banner .content .benefit-wrapper .benefit .banner-icon {
-      font-size: 1.5em; }
-  #one.spotlight.bottom .content header h2 {
-    font-size: 1.5em; }
-  #one.spotlight.bottom .content .benefit-wrapper .benefit {
-    width: 48%;
-    padding: 1em 2%; }
-    #one.spotlight.bottom .content .benefit-wrapper .benefit .banner-icon {
-      font-size: 1.5em; }
-  #two.banner .content {
-    padding: 4em 1em; }
-    #two.banner .content header h2 {
-      font-size: 1.5em; }
-    #two.banner .content .image {
-      margin: 1em auto; }
-  #half-two.banner .content {
-    padding: 4em 1em; }
-    #half-two.banner .content header h2 {
-      font-size: 1.5em; }
-  #three.banner .content {
-    padding: 4em 1em; }
-    #three.banner .content header h2 {
-      font-size: 1.5em; }
-  #four .container p {
-    width: 70%; }
-  #four .container ul {
-    width: 70%; }
-  #four .container input {
-    padding: 0 2.25em; } }
+        padding: 0; } }
