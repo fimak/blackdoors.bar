@@ -2749,46 +2749,6 @@ input[type="button"].green:hover,
   width: 200px;
   position: fixed; }
 
-/* Banner */
-#banner {
-  background-image: url("../../images/blackdoors-atmosphere.jpg"); }
-  #banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");; }
-  #banner .content {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4); }
-    #banner .content header h2 {
-      text-transform: uppercase;
-      font-weight: 400; }
-      #banner .content header h2 .company {
-        font-family: "Roboto", Helvetica, sans-serif; }
-        #banner .content header h2 .company .gold-letter {
-          margin-left: 0.1em;
-          color: #bba436; }
-          #banner .content header h2 .company .gold-letter:before {
-            content: '';
-            display: inline;
-            border-left: 2px solid #bba436;
-            vertical-align: text-bottom; }
-    #banner .content .benefit-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 1em;
-      margin-top: 2.5em;
-      overflow: hidden; }
-      #banner .content .benefit-wrapper .benefit {
-        width: 23%;
-        padding: 0 1%;
-        float: left; }
-        #banner .content .benefit-wrapper .benefit .banner-icon {
-          font-size: 3em;
-          margin-bottom: 0.25em; }
-
 /* Footer */
 #footer {
   background: #272833;
@@ -2808,11 +2768,53 @@ input[type="button"].green:hover,
     border-bottom: none; }
 
 /* Custom */
-#one.spotlight:before {
+/* Banner */
+#banner {
+  background-image: url("../../images/blackdoors-party2.jpg"); }
+  #banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");; }
+  #banner .content {
+    text-align: center;
+    vertical-align: text-bottom;
+    padding: 1em; }
+    #banner .content header {
+      display: inline-block;
+      padding: 0.5em 1.5em;
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.75); }
+      #banner .content header h2 {
+        text-transform: uppercase;
+        font-weight: 400; }
+        #banner .content header h2 .company .gold-letter {
+          color: #bba436; }
+  #banner .benefit-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    line-height: 1em;
+    padding-top: 1.5em;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
+    z-index: 1; }
+    #banner .benefit-wrapper .benefit {
+      width: 23%;
+      padding: 0 1%;
+      float: left; }
+      #banner .benefit-wrapper .benefit .banner-icon {
+        font-size: 3em;
+        margin-bottom: 0.25em; }
+
+#one.banner:before {
   background-image: none;
   background: rgba(255, 255, 255, 0.9); }
 
-#one.spotlight.bottom .content {
+#one.banner.bottom .content {
   border-top-width: 0;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
@@ -2820,36 +2822,36 @@ input[type="button"].green:hover,
   text-align: center;
   vertical-align: middle;
   display: inline-block; }
-  #one.spotlight.bottom .content header {
+  #one.banner.bottom .content header {
     display: inline-block;
     vertical-align: middle; }
-    #one.spotlight.bottom .content header h2 {
+    #one.banner.bottom .content header h2 {
       color: #212121;
       font-size: 2.5em;
       margin: 0;
       text-transform: uppercase;
       font-weight: bold; }
-  #one.spotlight.bottom .content .benefit-wrapper {
+  #one.banner.bottom .content .benefit-wrapper {
     color: #212121;
     width: 80%;
     text-align: center;
     line-height: 1em;
     margin: 2.5em auto;
     overflow: hidden; }
-    #one.spotlight.bottom .content .benefit-wrapper .benefit {
+    #one.banner.bottom .content .benefit-wrapper .benefit {
       width: 23%;
       padding: 0 1%;
       float: left; }
-      #one.spotlight.bottom .content .benefit-wrapper .benefit .banner-icon {
+      #one.banner.bottom .content .benefit-wrapper .benefit .banner-icon {
         font-size: 3em;
         margin-bottom: 0.25em; }
-  #one.spotlight.bottom .content .carousel {
+  #one.banner.bottom .content .carousel {
     padding-top: 1.5em; }
-    #one.spotlight.bottom .content .carousel p {
+    #one.banner.bottom .content .carousel p {
       margin-top: 0.5em;
       color: #212121; }
 
-#one.spotlight .goto-next:before {
+#one.banner .goto-next:before {
   background-image: url("images/arrow-black.svg"); }
 
 #half-two.banner {
