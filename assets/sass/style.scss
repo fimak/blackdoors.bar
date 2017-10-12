@@ -361,10 +361,10 @@ input[type="button"],
             .image {
                 border-radius: 100%;
                 display: inline-block;
-                height: 18em;
+                height: 14em;
                 margin-left: 3em;
                 vertical-align: middle;
-                width: 18em;
+                width: 14em;
 
                 img {
                     display: block;
@@ -453,35 +453,76 @@ input[type="button"],
 }
 
 #five {
+    &.banner {
+        background-attachment: fixed;
+        background-color: _palette(accent2);
+        background-image: url("../../images/blackdoors-party.jpg");
+        background-position: center center;
+        background-size: cover;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+        min-height: 100vh;
+        position: relative;
+        text-align: center;
+        z-index: (_misc(max-spotlight) + 1);
 
-    .container {
-
-        header {
-
-            h2 {
-                font-size: 2.5em;
-                margin: 0;
-                text-transform: uppercase;
-                font-weight: 400;
-            }
-        }
-
-        p {
-            width: 45%;
-            margin: 0 auto;
-        }
-
-        ul {
+        &:before {
+            content: '';
             display: inline-block;
-            position: relative;
-            width: 40%;
-            text-align: left;
-            padding-left: 2em;
+            height: 100vh;
+            vertical-align: middle;
+            width: 1%;
         }
 
-        form {
-            .text-field {
-                margin: 2em;
+        &:after {
+            @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .container {
+            display: inline-block;
+            margin-right: 1%;
+            max-width: 95%;
+            padding: 4em;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            z-index: 1;
+
+            header {
+                &.major {
+                    margin: 0;
+                }
+
+                h2 {
+                    font-size: 2.5em;
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+            }
+
+            ul {
+                margin: 0 auto;
+                position: relative;
+                width: 40%;
+                text-align: left;
+                padding-left: 2em;
+            }
+
+            form {
+                &.container {
+                    padding: 0 4em;
+                }
+
+                .text-field {
+                    margin: 2em;
+                }
             }
         }
     }
@@ -490,6 +531,10 @@ input[type="button"],
 #six {
     padding: 0;
     background: #272833;
+    .back-container {
+        height: 10em;
+        z-index: -1;
+    }
 
     iframe {
         opacity: 0.1;

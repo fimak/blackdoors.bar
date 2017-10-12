@@ -314,29 +314,38 @@
         var $three = $('#three')
         $three._parallax()
 
+        var $four = $('#four')
+        $four._parallax()
+
+
+        var $five = $('#five')
+        $five._parallax()
+
+
+        var $six = $('#six')
+        $six._parallax()
+
     })
 
-    $(document).ready(function () {
-        // Carousel
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 10,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
-                }
+    // Carousel
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
             }
-        })
-
-        //Mask
-        $('#phone').mask('+7(000) 000-00-00')
+        }
     })
+
+    //Mask
+    $('#phone').mask('+7(000) 000-00-00')
 
     var form = $('#form')
 
