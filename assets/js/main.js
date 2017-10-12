@@ -356,6 +356,8 @@
                 phone: $('#phone').val()
             },
             success: function() {
+                $('#name').val('')
+                $('#phone').val('')
                 alert(`Спасибо, вам скоро перезвонят.`)
             }
         })

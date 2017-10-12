@@ -17,9 +17,9 @@ app.get('*', function (req, res) {
 });
 
 app.post('/api/booking', function (req, res) {
-    const message = `Имя: ${req.body.name}\nТелефон: ${req.body.phone}`
+    const message = `Имя: ${req.body.name}\nТелефон: ${req.body.phone}`;
     bot.sendMessage(CHAT_ID, message);
-    console.log(req.body)
+    console.log(req.body);
     res.send(message);
 });
 
