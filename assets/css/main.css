@@ -2479,6 +2479,62 @@ body.is-touch #banner {
 #one.spotlight .goto-next:before {
   background-image: url("images/arrow-black.svg"); }
 
+#half-two.banner {
+  background-attachment: fixed;
+  background-color: #272833;
+  background-image: url("../../images/blackdoors-atmosphere2.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 21; }
+  #half-two.banner:before {
+    content: '';
+    display: inline-block;
+    height: 100vh;
+    vertical-align: middle;
+    width: 1%; }
+  #half-two.banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  #half-two.banner .content {
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 95%;
+    padding: 4em;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 1; }
+    #half-two.banner .content header {
+      display: inline-block;
+      vertical-align: middle; }
+      #half-two.banner .content header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 400; }
+      #half-two.banner .content header p {
+        padding-left: 5em;
+        margin: 0.5em 0 0 0;
+        top: 0; }
+    #half-two.banner .content .carousel {
+      padding-top: 4em; }
+      #half-two.banner .content .carousel p {
+        margin-top: 0.5em;
+        color: #212121; }
+
 #two.banner {
   background-attachment: fixed;
   background-color: #272833;
@@ -2542,7 +2598,7 @@ body.is-touch #banner {
 #three.banner {
   background-attachment: fixed;
   background-color: #272833;
-  background-image: url("../../images/blackdoors-atmosphere2.jpg");
+  background-image: url("../../images/blackdoors-party.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -2979,6 +3035,10 @@ body.is-touch #banner {
       font-size: 1.5em; }
     #two.banner .content .image {
       margin: 1em auto; }
+  #half-two.banner .content {
+    padding: 4em 1em; }
+    #half-two.banner .content header h2 {
+      font-size: 1.5em; }
   #three.banner .content {
     padding: 4em 1em; }
     #three.banner .content header h2 {
