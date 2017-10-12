@@ -295,9 +295,14 @@
 			$banner
 				._parallax();
 
-			var $banner2 = $('.banner');
+			var $two = $('#two');
 
-			$banner
+			$two
+        ._parallax();
+
+			var $three = $('#three');
+
+			$three
         ._parallax();
 
 	});
