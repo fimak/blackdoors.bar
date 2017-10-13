@@ -143,7 +143,7 @@ input[type="button"],
     &.banner {
         background-attachment: fixed;
         background-color: _palette(accent2);
-        background-image: url("../../images/pic04.jpg");
+        background-image: url("../../images/blackdoors-atmosphere.jpg");
         background-position: center center;
         background-size: cover;
         box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -161,7 +161,7 @@ input[type="button"],
         }
 
         &:after {
-            @include vendor('background-image', ('linear-gradient(top, #{_palette(banner-bg)}, #{_palette(banner-bg)})', 'url("images/overlay.png");'));
+            @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
             content: '';
             display: block;
             height: 100%;
