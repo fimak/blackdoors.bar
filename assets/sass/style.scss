@@ -569,32 +569,31 @@ input[type="button"],
 
 @include breakpoint(xsmall) {
     #banner {
-        .content {
-            .benefit-wrapper {
-                .benefit {
-                    width: 48%;
-                    padding: 1em 2%;
-                    .banner-icon {
-                        font-size: 1.5em;
-                    }
+        .benefit-wrapper {
+            .benefit {
+                width: 48%;
+                padding: 1em 2%;
+                .banner-icon {
+                    font-size: 1.5em;
                 }
             }
         }
     }
 
-    #one.spotlight.bottom {
+    #one.banner {
         .content {
+            padding: 4em 1em;
             header {
                 h2 {
                     font-size: 1.5em;
                 }
-            }
-            .benefit-wrapper {
-                .benefit {
-                    width: 48%;
-                    padding: 1em 2%;
-                    .banner-icon {
-                        font-size: 1.5em;
+                .benefit-wrapper {
+                    .benefit {
+                        width: 48%;
+                        padding: 1em 2%;
+                        .banner-icon {
+                            font-size: 1.5em;
+                        }
                     }
                 }
             }
@@ -615,17 +614,6 @@ input[type="button"],
         }
     }
 
-    #half-two.banner {
-        .content {
-            padding: 4em 1em;
-            header {
-                h2 {
-                    font-size: 1.5em;
-                }
-            }
-        }
-    }
-
     #three.banner {
         .content {
             padding: 4em 1em;
@@ -636,17 +624,42 @@ input[type="button"],
             }
         }
     }
+    
+    #four.banner {
+        .content {
+            padding: 4em 1em;
+            header {
+                h2 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
 
-    #four {
+    #five.banner {
         .container {
+            padding: 4em 1em;
+            header {
+                h2 {
+                    font-size: 1.5em;
+                }
+            }
             p {
-                width: 70%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            form {
+                padding: 0 !important;
+                .text-field {
+                    margin: 2em;
+                    input {
+                        padding: 0 2.25em;
+                    }
+                }
             }
             ul {
-                width: 70%;
-            }
-            input {
-                padding: 0 2.25em;
+                width: 100%;
             }
         }
     }
