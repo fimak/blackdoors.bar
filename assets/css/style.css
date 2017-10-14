@@ -2864,9 +2864,7 @@ input[type="button"].green:hover,
             font-size: 3em;
             margin-bottom: 0.5em; }
     #one.banner .content .carousel {
-      padding-top: 130px;
-      margin: 0 -1%;
-      width: 102%; }
+      padding-top: 130px; }
       #one.banner .content .carousel .owl-nav {
         text-align: center;
         position: absolute;
@@ -2924,9 +2922,7 @@ input[type="button"].green:hover,
         top: 0;
         color: #212121; }
     #two.banner .content .carousel {
-      padding-top: 130px;
-      margin: 0 -1%;
-      width: 102%; }
+      padding-top: 130px; }
       #two.banner .content .carousel .owl-nav {
         text-align: center;
         position: absolute;
