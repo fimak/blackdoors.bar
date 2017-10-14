@@ -2707,7 +2707,8 @@ a {
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   border-bottom: none;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   a:hover {
     color: #C3BA00 !important;
     border-bottom-color: transparent; }
@@ -2773,43 +2774,50 @@ input[type="button"].green:hover,
 #banner {
   background-image: url("../../images/blackdoors-party2.jpg"); }
   #banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.3), rgba(23, 24, 32, 0.3)), url("images/overlay.png");; }
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");; }
   #banner .content {
     text-align: center;
     padding: 1em;
     vertical-align: top;
-    margin-top: 5em; }
+    margin-top: 3.5em; }
     #banner .content header {
       display: inline-block;
       padding: 0.5em 1.5em;
       font-weight: bold; }
       #banner .content header h2 {
-        text-transform: uppercase;
-        text-shadow: 2px 2px 4px black;
-        font-weight: 400; }
-        #banner .content header h2 .company .gold-letter {
-          color: #bba436; }
-  #banner .benefit-wrapper {
+        font-size: 3.2em;
+        line-height: 1em;
+        margin-bottom: 0.5em; }
+      #banner .content header h3 {
+        display: inline;
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
+        padding: 0.4em 0.8em;
+        color: #C3BA00; }
+  #banner .benefits-bottom {
     position: absolute;
     bottom: 0;
-    width: 80%;
-    left: 10%;
-    text-align: center;
-    line-height: 1.5em;
-    overflow: hidden;
+    width: 100%;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
     z-index: 1; }
-    #banner .benefit-wrapper .benefit {
-      width: 23%;
-      padding: 1.5em 1% 1em;
-      float: left; }
-      #banner .benefit-wrapper .benefit .banner-icon {
-        font-size: 3em;
-        margin-bottom: 0.25em; }
+    #banner .benefits-bottom .benefit-wrapper {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      text-align: center;
+      line-height: 1.5em;
+      overflow: hidden; }
+      #banner .benefits-bottom .benefit-wrapper .benefit {
+        width: 23%;
+        padding: 1.5em 1% 1em;
+        float: left; }
+        #banner .benefits-bottom .benefit-wrapper .benefit .banner-icon {
+          font-size: 3em;
+          margin-bottom: 0.25em; }
 
 #one.banner {
   background: url("../../images/main_bg.jpg") repeat;
@@ -2828,7 +2836,7 @@ input[type="button"].green:hover,
     display: block;
     margin-right: 0;
     max-width: 100%;
-    padding: 4em 0 6em;
+    padding: 4em 0 4em;
     position: relative;
     text-align: center;
     vertical-align: middle;
@@ -2904,7 +2912,7 @@ input[type="button"].green:hover,
     display: block;
     margin-right: 0;
     max-width: 100%;
-    padding: 4em 0 6em;
+    padding: 0;
     position: relative;
     text-align: center;
     vertical-align: middle;
@@ -2980,7 +2988,7 @@ input[type="button"].green:hover,
     max-width: 95%;
     padding: 4em;
     position: relative;
-    text-align: right;
+    text-align: left;
     vertical-align: middle;
     z-index: 1; }
     #three.banner .content header {
@@ -2998,7 +3006,7 @@ input[type="button"].green:hover,
       border-radius: 100%;
       display: inline-block;
       height: 14em;
-      margin-left: 3em;
+      margin-right: 3em;
       vertical-align: middle;
       width: 14em; }
       #three.banner .content .image img {

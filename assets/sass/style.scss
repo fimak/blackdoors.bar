@@ -7,6 +7,7 @@ a {
     border-bottom: none;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
         color: #C3BA00 !important;
@@ -82,53 +83,55 @@ input[type="button"],
 
     .content {
         text-align: center;
-        //vertical-align: text-bottom;
         padding: 1em;
         vertical-align: top;
-        margin-top: 5em;
+        margin-top: 3.5em;
 
         header {
             display: inline-block;
             padding: 0.5em 1.5em;
             font-weight: bold;
-            //font-size: 1.2em;
-            //font: 1.2em "Open Sans", sans-serif;
-            //background: rgba(0, 0, 0, 0.5);
-            //box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.75);
 
             h2 {
-                text-transform: uppercase;
-                text-shadow: 2px 2px 4px black;
-                font-weight: 400;
+                font-size: 3.2em;
+                line-height: 1em;
+                margin-bottom: 0.5em;
+            }
 
-                .company {
-                    .gold-letter {
-                        color: _palette(logo-gold);
-                    }
-                }
+            h3 {
+                display: inline;
+                background: rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
+                padding: 0.4em 0.8em;
+                color: #C3BA00;
             }
         }
     }
-    .benefit-wrapper {
+    .benefits-bottom {
         position: absolute;
         bottom: 0;
-        width: 80%;
-        left: 10%;
-        text-align: center;
-        line-height: 1.5em;
-        overflow: hidden;
+        width: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
         z-index: 1;
 
-        .benefit {
-            width: 23%;
-            padding: 1.5em 1% 1em;
-            float: left;
+        .benefit-wrapper {
+            position: relative;
+            width: 80%;
+            left: 10%;
+            text-align: center;
+            line-height: 1.5em;
+            overflow: hidden;
 
-            .banner-icon {
-                font-size: 3em;
-                margin-bottom: 0.25em;
+            .benefit {
+                width: 23%;
+                padding: 1.5em 1% 1em;
+                float: left;
+
+                .banner-icon {
+                    font-size: 3em;
+                    margin-bottom: 0.25em;
+                }
             }
         }
     }
@@ -171,7 +174,7 @@ input[type="button"],
             display: block;
             margin-right: 0;
             max-width: 100%;
-            padding: 4em 0 6em;
+            padding: 4em 0 4em;
             position: relative;
             text-align: center;
             vertical-align: middle;
@@ -304,7 +307,7 @@ input[type="button"],
             display: block;
             margin-right: 0;
             max-width: 100%;
-            padding: 4em 0 6em;
+            padding: 0;
             position: relative;
             text-align: center;
             vertical-align: middle;
@@ -409,7 +412,7 @@ input[type="button"],
             max-width: 95%;
             padding: 4em;
             position: relative;
-            text-align: right;
+            text-align: left;
             vertical-align: middle;
             z-index: 1;
 
@@ -434,7 +437,7 @@ input[type="button"],
                 border-radius: 100%;
                 display: inline-block;
                 height: 14em;
-                margin-left: 3em;
+                margin-right: 3em;
                 vertical-align: middle;
                 width: 14em;
 
