@@ -2827,7 +2827,7 @@ input[type="button"].green:hover,
     display: block;
     margin-right: 0;
     max-width: 100%;
-    padding: 4em 0;
+    padding: 4em 0 6em;
     position: relative;
     text-align: center;
     vertical-align: middle;
@@ -2864,7 +2864,7 @@ input[type="button"].green:hover,
             font-size: 3em;
             margin-bottom: 0.5em; }
     #one.banner .content .carousel {
-      padding-top: 1.5em;
+      padding-top: 130px;
       margin: 0 -1%;
       width: 102%; }
       #one.banner .content .carousel .owl-nav {
@@ -2873,71 +2873,80 @@ input[type="button"].green:hover,
         top: -90px;
         width: 100%; }
         #one.banner .content .carousel .owl-nav .owl-prev, #one.banner .content .carousel .owl-nav .owl-next {
-          background: url(../images/sprite/text-slider-arrows.png) no-repeat 0 0;
+          background: url(../../images/sprite/text-slider-arrows.png) no-repeat 0 0;
           width: 40px;
           height: 40px;
           text-indent: -99999px;
           display: inline-block;
           margin: 0 20px;
           transition: opacity 0.3s; }
+        #one.banner .content .carousel .owl-nav .owl-next {
+          background-position: -40px 0; }
       #one.banner .content .carousel p {
         margin: 1em 0 0;
         font-size: 1em;
         color: #212121; }
+  #one.banner .goto-next:before {
+    background-image: url(images/arrow-black.svg); }
 
 #two.banner {
-  background-attachment: fixed;
-  background-color: #272833;
-  background-image: url("../../images/blackdoors-atmosphere2.jpg");
-  background-position: center center;
-  background-size: cover;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  background: url("../../images/main_bg.jpg") repeat;
   min-height: 100vh;
   position: relative;
   text-align: center;
   z-index: 21; }
   #two.banner:before {
     content: '';
-    display: inline-block;
+    display: none;
     height: 100vh;
     vertical-align: middle;
     width: 1%; }
-  #two.banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
   #two.banner .content {
-    display: inline-block;
-    margin-right: 1%;
-    max-width: 95%;
-    padding: 4em;
+    display: block;
+    margin-right: 0;
+    max-width: 100%;
+    padding: 4em 0 6em;
     position: relative;
     text-align: center;
     vertical-align: middle;
     z-index: 1; }
     #two.banner .content header {
-      display: inline-block;
-      vertical-align: middle; }
+      display: block;
+      padding: 0.5em 1.5em;
+      color: #212121; }
       #two.banner .content header h2 {
-        font-size: 2.5em;
+        font-size: 1.7em;
         text-transform: uppercase;
-        font-weight: 400; }
+        font-weight: 400;
+        color: #212121; }
       #two.banner .content header p {
         margin: 0.5em 0 0 0;
-        top: 0; }
-    #two.banner .content .carousel {
-      padding-top: 6em; }
-      #two.banner .content .carousel p {
-        margin-top: 1em;
+        top: 0;
         color: #212121; }
+    #two.banner .content .carousel {
+      padding-top: 130px;
+      margin: 0 -1%;
+      width: 102%; }
+      #two.banner .content .carousel .owl-nav {
+        text-align: center;
+        position: absolute;
+        top: -90px;
+        width: 100%; }
+        #two.banner .content .carousel .owl-nav .owl-prev, #two.banner .content .carousel .owl-nav .owl-next {
+          background: url(../../images/sprite/text-slider-arrows.png) no-repeat 0 0;
+          width: 40px;
+          height: 40px;
+          text-indent: -99999px;
+          display: inline-block;
+          margin: 0 20px;
+          transition: opacity 0.3s; }
+        #two.banner .content .carousel .owl-nav .owl-next {
+          background-position: -40px 0; }
+      #two.banner .content .carousel p {
+        font-size: 1em;
+        color: #212121; }
+  #two.banner .goto-next:before {
+    background-image: url(images/arrow-black.svg); }
 
 #three.banner {
   background-attachment: fixed;
@@ -2981,7 +2990,7 @@ input[type="button"].green:hover,
       display: inline-block;
       vertical-align: middle; }
       #three.banner .content header h2 {
-        font-size: 2.5em;
+        font-size: 1.7em;
         margin: 0;
         text-transform: uppercase;
         font-weight: 400; }
@@ -3041,14 +3050,16 @@ input[type="button"].green:hover,
       display: inline-block;
       vertical-align: middle; }
       #four.banner .content header h2 {
-        font-size: 2.5em;
+        font-size: 1.7em;
         margin: 0;
         text-transform: uppercase;
-        font-weight: 400; }
+        font-weight: 400;
+        text-shadow: 1px 1px 2px black; }
       #four.banner .content header p {
         padding-left: 5em;
         margin: 0.5em 0 0 0;
-        top: 0; }
+        top: 0;
+        text-shadow: 1px 1px 2px black; }
     #four.banner .content .image {
       border-radius: 100%;
       display: inline-block;
@@ -3101,10 +3112,11 @@ input[type="button"].green:hover,
     #five.banner .container header.major {
       margin: 0; }
     #five.banner .container header h2 {
-      font-size: 2.5em;
+      font-size: 1.7em;
       margin: 0;
       text-transform: uppercase;
-      font-weight: 400; }
+      font-weight: 400;
+      text-shadow: 1px 1px 2px black; }
     #five.banner .container ul {
       margin: 0 auto;
       position: relative;
@@ -3123,7 +3135,7 @@ input[type="button"].green:hover,
     height: 10em;
     z-index: -1; }
   #six iframe {
-    opacity: 0.1; }
+    opacity: 0.7; }
 
 /* XLarge */
 /* Large */

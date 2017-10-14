@@ -26,7 +26,6 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "jquery-mask-plugin": "^1.14.12",
-    "node-telegram-bot-api": "^0.28.0",
-    "owl-carousel-2": "0.0.3"
+    "node-telegram-bot-api": "^0.28.0"
   }
 }
