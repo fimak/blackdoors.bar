@@ -3009,11 +3009,7 @@ input[type="button"].green:hover,
         width: 100%; }
 
 #four.banner {
-  background-attachment: fixed;
-  background-color: #272833;
-  background-image: url("../../images/blackdoors-party.jpg");
-  background-position: center center;
-  background-size: cover;
+  background: url("../../images/main_bg.jpg") repeat;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
   min-height: 100vh;
   position: relative;
@@ -3021,29 +3017,17 @@ input[type="button"].green:hover,
   z-index: 21; }
   #four.banner:before {
     content: '';
-    display: inline-block;
+    display: none;
     height: 100vh;
     vertical-align: middle;
-    width: 1%; }
-  #four.banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.8), rgba(23, 24, 32, 0.8)), url("images/overlay.png");;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
+    width: 0; }
   #four.banner .content {
     display: inline-block;
     margin-right: 1%;
     max-width: 95%;
     padding: 4em;
     position: relative;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
     z-index: 1; }
     #four.banner .content header {
@@ -3051,25 +3035,12 @@ input[type="button"].green:hover,
       vertical-align: middle; }
       #four.banner .content header h2 {
         font-size: 1.7em;
-        margin: 0;
         text-transform: uppercase;
-        font-weight: 400;
-        text-shadow: 1px 1px 2px black; }
+        font-weight: bold;
+        color: #212121; }
       #four.banner .content header p {
-        padding-left: 5em;
-        margin: 0.5em 0 0 0;
-        top: 0;
-        text-shadow: 1px 1px 2px black; }
-    #four.banner .content .image {
-      border-radius: 100%;
-      display: inline-block;
-      height: 18em;
-      margin-right: 3em;
-      vertical-align: middle;
-      width: 18em; }
-      #four.banner .content .image img {
-        display: block;
-        width: 100%; }
+        color: #212121;
+        margin: 0.5em 0 0 0; }
 
 #five.banner {
   background-attachment: fixed;
@@ -3135,7 +3106,7 @@ input[type="button"].green:hover,
     height: 10em;
     z-index: -1; }
   #six iframe {
-    opacity: 0.7; }
+    opacity: 0.85; }
 
 /* XLarge */
 /* Large */
