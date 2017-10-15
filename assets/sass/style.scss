@@ -36,12 +36,16 @@ input[type="button"],
         color: #39c088 !important;
     }
 
-    &.pink {
-        box-shadow: inset 0 0 0 1px #e44c65;
-        color: #e44c65 !important;
+    &.yellow {
+        box-shadow: inset 0 0 0 1px #C3BA00;
+        color: #ffffff !important;
+        background: #C3BA00;
+        &:hover {
+            background: #a59d00;
+        }
     }
 
-    &.pink:hover,
+    &.yellow:hover,
     &.blue:hover,
     &.green:hover {
         box-shadow: inset 0 0 0 1px #ffffff;
@@ -139,12 +143,7 @@ input[type="button"],
 
 #one {
     &.banner {
-        //background-attachment: fixed;
-        //background-color: _palette(accent2);
         background: url("../../images/main_bg.jpg") repeat;
-        //background-image: url("../../images/blackdoors-atmosphere.jpg");
-        //background-position: center center;
-        //background-size: cover;
         box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
         min-height: 100vh;
         position: relative;
@@ -159,17 +158,6 @@ input[type="button"],
             width: 0;
         }
 
-        //&:after {
-        //    @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
-        //    content: '';
-        //    display: block;
-        //    height: 100%;
-        //    left: 0;
-        //    position: absolute;
-        //    top: 0;
-        //    width: 100%;
-        //}
-
         .content {
             display: block;
             margin-right: 0;
@@ -183,13 +171,10 @@ input[type="button"],
             header {
                 display: block;
                 padding: 0.5em 1.5em;
-                //background: rgba(0, 0, 0, 0.5);
-                //box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.75);
                 color: #212121;
 
                 h2 {
                     font-size: 1.7em;
-                    //margin: 0;
                     text-transform: uppercase;
                     font-weight: bold;
                     color: #212121;
@@ -206,6 +191,22 @@ input[type="button"],
                 p {
                     color: #212121;
                     margin: 0;
+                }
+
+                .designer {
+
+                    .designer-photo {
+                        width: 7em;
+                        height: 7em;
+                        border-radius: 100%;
+                        background: url(../../images/designer.jpg) no-repeat center center;
+                        background-size: cover;
+                        margin: 1em auto 0;
+                    }
+
+                    .designer-info {
+                        font-style: italic;
+                    }
                 }
 
                 .benefit-wrapper {
@@ -230,6 +231,20 @@ input[type="button"],
 
             .carousel {
                 padding-top: 130px;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+
+                .owl-carousel .owl-wrapper-outer{
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+                    z-index: 1;  /* added this */
+                }
+                .owl-item {
+                    transform: translateZ(0);
+                    -webkit-transform: translateZ(0);
+                    -ms-transform: translateZ(0);
+                }
 
                 .owl-nav {
                     text-align: center;
@@ -273,12 +288,7 @@ input[type="button"],
 
 #two {
     &.banner {
-        //background-attachment: fixed;
-        //background-color: _palette(accent2);
         background: url("../../images/main_bg.jpg") repeat;
-        //background-position: center center;
-        //background-size: cover;
-        //box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
         min-height: 100vh;
         position: relative;
         text-align: center;
@@ -291,17 +301,6 @@ input[type="button"],
             vertical-align: middle;
             width: 1%;
         }
-
-        //&:after {
-        //    @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
-        //    content: '';
-        //    display: block;
-        //    height: 100%;
-        //    left: 0;
-        //    position: absolute;
-        //    top: 0;
-        //    width: 100%;
-        //}
 
         .content {
             display: block;
@@ -320,7 +319,6 @@ input[type="button"],
 
                 h2 {
                     font-size: 1.7em;
-                    //margin: 0;
                     text-transform: uppercase;
                     font-weight: 400;
                     color: #212121;
@@ -335,6 +333,8 @@ input[type="button"],
 
             .carousel {
                 padding-top: 130px;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
 
                 .owl-nav {
                     text-align: center;
@@ -358,7 +358,6 @@ input[type="button"],
                 }
 
                 p {
-                    //margin: 1em 0 0;
                     font-size: 1em;
                     color: #212121;
 
@@ -452,11 +451,7 @@ input[type="button"],
 
 #four {
     &.banner {
-        //background-attachment: fixed;
-        //background-color: _palette(accent2);
         background: url("../../images/main_bg.jpg") repeat;
-        //background-position: center center;
-        //background-size: cover;
         box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
         min-height: 100vh;
         position: relative;
@@ -470,17 +465,6 @@ input[type="button"],
             vertical-align: middle;
             width: 0;
         }
-
-        //&:after {
-        //    @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent-l)}, #{_palette(bg-transparent-l)})', 'url("images/overlay.png");'));
-        //    content: '';
-        //    display: block;
-        //    height: 100%;
-        //    left: 0;
-        //    position: absolute;
-        //    top: 0;
-        //    width: 100%;
-        //}
 
         .content {
             display: inline-block;
@@ -506,6 +490,52 @@ input[type="button"],
                 p {
                     color: #212121;
                     margin: (_size(element-margin) * 0.25) 0 0 0;
+                }
+            }
+
+            .feedback-wrapper {
+                overflow: hidden;
+
+                .feedback {
+                    float: left;
+                    width: 33%;
+                    padding: 0 2%;
+                    color: #000;
+
+                    .feedback-user-name {
+                        font-size: 1.2em;
+
+                    }
+
+                    .feedback-user-description {
+                        font-size: 0.6em;
+                        font-style: italic;
+                    }
+
+                    .feedback-photo {
+                        width: 14em;
+                        height: 14em;
+                        border-radius: 100%;
+                        margin: 1em auto;
+                        overflow: hidden;
+
+                        &.dorogova {
+                            background: url(../../images/dorogova.png) no-repeat center center;
+                            background-size: cover;
+                        }
+                        &.marina {
+                            background: url(../../images/marina.jpg) no-repeat center center;
+                            background-size: cover;
+                        }
+                        &.pavel {
+                            background: url(../../images/pavel.jpg) no-repeat center center;
+                            background-size: cover;
+                        }
+                    }
+
+                    .feedback-text {
+                        font-size: 0.8em;
+                    }
                 }
             }
         }
@@ -557,6 +587,10 @@ input[type="button"],
             header {
                 &.major {
                     margin: 0;
+
+                    &:after {
+                        background: #C3BA00;
+                    }
                 }
 
                 h2 {
@@ -574,18 +608,21 @@ input[type="button"],
             ul {
                 margin: 0 auto;
                 position: relative;
-                width: 40%;
                 text-align: left;
+                font-weight: 300;
                 padding-left: 2em;
             }
 
             form {
+                color: #fff;
+
                 &.container {
                     padding: 0 4em;
                 }
 
                 .text-field {
                     margin: 2em;
+                    color: #C3BA00;
                 }
             }
         }
@@ -609,12 +646,14 @@ input[type="button"],
 
 #footer {
     background: _palette(accent2);
-    padding: $size-wrapper-pad-tb 0;
+    padding: 4em 0;
     text-align: center;
+    color: #fff;
 
     .contacts {
         color: rgba(255, 255, 255, 0.5);
-        font-size: 0.8em;
+        font-size: 1.3em;
+        line-height: 1.5em;
         margin: 2em 0 2.5em 0;
         padding: 0;
         text-align: center;
@@ -728,6 +767,7 @@ input[type="button"],
                     font-size: 1.5em;
                 }
             }
+
         }
     }
 
@@ -757,5 +797,26 @@ input[type="button"],
                 width: 100%;
             }
         }
+    }
+}
+
+//carousel fix
+
+.carousel {
+    text-size-adjust: none;
+    max-height: 999999px;
+
+    .owl-carousel {
+        .owl-stage {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            z-index: 1; /* added this */
+        }
+    }
+    .owl-item {
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
     }
 }
