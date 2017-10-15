@@ -726,6 +726,15 @@ input[type="button"],
         zoom: 0.5;
         transform: scale(0.9);
     }
+
+    #four.banner .content {
+        .feedback-wrapper {
+            .feedback {
+                float: none;
+                width: 100%;
+            }
+        }
+    }
 }
 
 /* Small */
@@ -737,13 +746,31 @@ input[type="button"],
 /* XSmall */
 
 @include breakpoint(xsmall) {
+
     #banner {
-        .benefit-wrapper {
-            .benefit {
-                width: 48%;
-                padding: 1em 2%;
-                .banner-icon {
-                    font-size: 1.5em;
+        .content {
+            margin-top: 0.5em;
+
+            header {
+                padding: 0;
+
+                h2 {
+                    font-size: 2.2em;
+                }
+            }
+        }
+
+        .benefits-bottom {
+            .benefit-wrapper {
+                .benefit {
+                    width: 48%;
+                    padding: 1em 2%;
+                    font-size: 1em;
+                    line-height: 1em;
+
+                    .banner-icon {
+                        font-size: 1.5em;
+                    }
                 }
             }
         }
@@ -803,6 +830,13 @@ input[type="button"],
                 }
             }
 
+            .feedback-wrapper {
+
+                .feedback {
+                    float: none;
+                    width: 100%;
+                }
+            }
         }
     }
 

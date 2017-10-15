@@ -3223,15 +3223,26 @@ input[type="button"].green:hover,
 @media screen and (max-width: 980px) {
   .clock {
     zoom: 0.5;
-    transform: scale(0.9); } }
+    transform: scale(0.9); }
+  #four.banner .content .feedback-wrapper .feedback {
+    float: none;
+    width: 100%; } }
 
 /* Small */
 /* XSmall */
 @media screen and (max-width: 480px) {
-  #banner .benefit-wrapper .benefit {
+  #banner .content {
+    margin-top: 0.5em; }
+    #banner .content header {
+      padding: 0; }
+      #banner .content header h2 {
+        font-size: 2.2em; }
+  #banner .benefits-bottom .benefit-wrapper .benefit {
     width: 48%;
-    padding: 1em 2%; }
-    #banner .benefit-wrapper .benefit .banner-icon {
+    padding: 1em 2%;
+    font-size: 1em;
+    line-height: 1em; }
+    #banner .benefits-bottom .benefit-wrapper .benefit .banner-icon {
       font-size: 1.5em; }
   #one.banner .content {
     padding: 4em 1em; }
@@ -3256,6 +3267,9 @@ input[type="button"].green:hover,
     padding: 4em 1em; }
     #four.banner .content header h2 {
       font-size: 1.5em; }
+    #four.banner .content .feedback-wrapper .feedback {
+      float: none;
+      width: 100%; }
   #five.banner .container {
     padding: 4em 1em; }
     #five.banner .container header h2 {
