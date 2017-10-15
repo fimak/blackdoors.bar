@@ -12,6 +12,7 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/flipclock.css">
 </head>
 <body class="landing">
 <div id="page-wrapper">
@@ -31,7 +32,8 @@
         <div class="content">
             <header>
                 <h2>Незабываемый <br/>новогодний банкет</h2>
-                <h3>в караоке-баре BLACKDOORS</h3>
+                <img class="logo" src="images/blackdoors-logo.png" alt="BLACKDOORS">
+                <!--<h3>в караоке-баре BLACKDOORS</h3>-->
             </header>
         </div>
         <div class="benefits-bottom">
@@ -230,7 +232,14 @@
         <div class="container">
             <header class="major">
                 <h2>Специальное предложение</h2>
-                <p>Специальные условия для тех, кто оставит заявку сегодня</p>
+                <p>Специальные условия для тех, кто оставит заявку пока работает таймер</p>
+                <div class="clock"></div>
+                <div class="message"></div>
+                <div class="rush">Успейте заказать банкет по специальной цене на:</div>
+                <ul>
+                    <li>аренду зала</li>
+                    <li>специальное новогоднее предложение по барной карте</li>
+                </ul>
             </header>
             <form class="container 50%" id="form">
                 <div class="text-field">
@@ -239,15 +248,14 @@
                 <div class="text-field">
                     <input type="text" name="phone" id="phone" placeholder="Ваш телефон"/>
                 </div>
-                <div class="">
+                <div class="button-wrapper">
                     <input class="button yellow" id="trSubmit" type="submit" value="Заказать банкет"/>
                 </div>
+                <p>
+                    В течение 20 минут вам позвонит управляющая караоке-бара.<br/>
+                    Ксения лично займётся организацией вашего банкета!
+                </p>
             </form>
-            <ul>
-                Успейте заказать банкет по специальной цене на:
-                <li>аренду зала</li>
-                <li>специальное новогоднее предложение по барной карте</li>
-            </ul>
         </div>
     </section>
 
@@ -286,6 +294,7 @@
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/jquery.mask.min.js"></script>
+<script src="assets/js/flipclock.min.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

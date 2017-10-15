@@ -2795,8 +2795,9 @@ input[type="button"].green:hover,
       font-weight: bold; }
       #banner .content header h2 {
         font-size: 3.2em;
-        line-height: 1em;
-        margin-bottom: 0.5em; }
+        line-height: 1em; }
+      #banner .content header .logo {
+        width: 280px; }
       #banner .content header h3 {
         display: inline;
         background: rgba(0, 0, 0, 0.5);
@@ -3154,12 +3155,27 @@ input[type="button"].green:hover,
       text-shadow: 1px 1px 2px black; }
     #five.banner .container header p {
       margin-bottom: 0; }
-    #five.banner .container ul {
+    #five.banner .container header .rush {
+      color: #ffffff;
+      font-weight: 300; }
+    #five.banner .container header > ul {
+      width: 40%;
       margin: 0 auto;
       position: relative;
       text-align: left;
       font-weight: 300;
-      padding-left: 2em; }
+      padding-left: 2em;
+      color: #ffffff; }
+    #five.banner .container header .clock {
+      margin: 4em auto 2em;
+      width: auto;
+      display: inline-block; }
+      #five.banner .container header .clock .flip-clock-label {
+        color: #ffffff; }
+      #five.banner .container header .clock ul {
+        padding: 0; }
+        #five.banner .container header .clock ul li {
+          padding: 0; }
     #five.banner .container form {
       color: #fff; }
       #five.banner .container form.container {
@@ -3167,6 +3183,11 @@ input[type="button"].green:hover,
       #five.banner .container form .text-field {
         margin: 2em;
         color: #C3BA00; }
+      #five.banner .container form p {
+        margin-top: 1em;
+        font-size: 0.8em;
+        font-style: italic;
+        line-height: 1em; }
 
 #six {
   padding: 0;
@@ -3200,6 +3221,11 @@ input[type="button"].green:hover,
 /* XLarge */
 /* Large */
 /* Medium */
+@media screen and (max-width: 980px) {
+  .clock {
+    zoom: 0.5;
+    transform: scale(0.9); } }
+
 /* Small */
 /* XSmall */
 @media screen and (max-width: 480px) {
@@ -3235,6 +3261,11 @@ input[type="button"].green:hover,
     padding: 4em 1em; }
     #five.banner .container header h2 {
       font-size: 1.5em; }
+    #five.banner .container header > ul {
+      width: 100%; }
+    #five.banner .container header .clock {
+      zoom: 0.3;
+      transform: scale(0.9); }
     #five.banner .container p {
       width: 100%;
       margin: 0;
@@ -3244,9 +3275,7 @@ input[type="button"].green:hover,
       #five.banner .container form .text-field {
         margin: 2em; }
         #five.banner .container form .text-field input {
-          padding: 0 2.25em; }
-    #five.banner .container ul {
-      width: 100%; } }
+          padding: 0 2.25em; } }
 
 .carousel {
   text-size-adjust: none;

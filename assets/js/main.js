@@ -388,19 +388,42 @@ $(document).ready(function() {
     autoHeight: true,
     responsive: {
       0: {
-        items: 1,
+        items: 1
       },
       600: {
-        items: 3,
+        items: 3
       },
       1000: {
-        items: 3,
+        items: 3
       },
       1600: {
-        items: 4,
+        items: 4
       }
     }
   })
+
+  //FlipClock
+  var clock = $('.clock').FlipClock({
+    language: 'russian',
+    clockFace: 'DailyCounter',
+    autoStart: false,
+    callbacks: {
+      stop: function() {
+        $('.message').html('Акция окончена!')
+      }
+    }
+  });
+
+  var date = new Date();
+  date.setDate(date.getDate() + 2)
+  date.setHours(0)
+  date.setMinutes(0)
+  date.setSeconds(0)
+  var time = +date - Date.now()
+
+  clock.setTime(time/1000);
+  clock.setCountdown(true);
+  clock.start();
 
   //Mask
   $('#phone').mask('+7(000) 000-00-00')
@@ -419,7 +442,7 @@ $(document).ready(function() {
       success: function () {
         $('#name').val('')
         $('#phone').val('')
-        alert(`Спасибо, вам скоро перезвонят.`)
+        alert('Спасибо, вам скоро перезвонят.')
       }
     })
   })
