@@ -3240,6 +3240,8 @@ input[type="button"].green:hover,
       padding: 0; }
       #banner .content header h2 {
         font-size: 2.2em; }
+      #banner .content header .logo {
+        width: 16em; }
   #banner .benefits-bottom .benefit-wrapper .benefit {
     width: 48%;
     padding: 1em 2%;
@@ -3248,31 +3250,38 @@ input[type="button"].green:hover,
     #banner .benefits-bottom .benefit-wrapper .benefit .banner-icon {
       font-size: 1.5em; }
   #one.banner .content {
-    padding: 4em 1em; }
+    padding: 4em 1em 1em; }
     #one.banner .content header h2 {
       font-size: 1.5em; }
-    #one.banner .content header .benefit-wrapper .benefit {
-      width: 48%;
-      padding: 1em 2%; }
-      #one.banner .content header .benefit-wrapper .benefit .banner-icon {
-        font-size: 1.5em; }
+    #one.banner .content header .benefit-wrapper {
+      margin: 0;
+      width: 100%; }
+      #one.banner .content header .benefit-wrapper .benefit {
+        width: 48%;
+        padding: 1em 2%;
+        word-wrap: break-word; }
+        #one.banner .content header .benefit-wrapper .benefit .banner-icon {
+          font-size: 1.5em; }
   #two.banner .content {
-    padding: 4em 1em; }
+    padding: 2em 1em 4em; }
     #two.banner .content header h2 {
       font-size: 1.5em; }
     #two.banner .content .image {
       margin: 1em auto; }
   #three.banner .content {
     padding: 4em 1em; }
+    #three.banner .content .image {
+      margin-bottom: 2em; }
     #three.banner .content header h2 {
       font-size: 1.5em; }
   #four.banner .content {
-    padding: 4em 1em; }
+    padding: 4em 1em 1em; }
     #four.banner .content header h2 {
       font-size: 1.5em; }
     #four.banner .content .feedback-wrapper .feedback {
       float: none;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 2em; }
   #five.banner .container {
     padding: 4em 1em; }
     #five.banner .container header h2 {
@@ -3291,7 +3300,9 @@ input[type="button"].green:hover,
       #five.banner .container form .text-field {
         margin: 2em; }
         #five.banner .container form .text-field input {
-          padding: 0 2.25em; } }
+          padding: 0 2.25em; }
+      #five.banner .container form .button {
+        padding: 0 2em; } }
 
 .carousel {
   text-size-adjust: none;

@@ -761,6 +761,10 @@ input[type="button"],
                 h2 {
                     font-size: 2.2em;
                 }
+
+                .logo {
+                    width: 16em;
+                }
             }
         }
 
@@ -782,15 +786,20 @@ input[type="button"],
 
     #one.banner {
         .content {
-            padding: 4em 1em;
+            padding: 4em 1em 1em;
             header {
+
                 h2 {
                     font-size: 1.5em;
                 }
                 .benefit-wrapper {
+                    margin: 0;
+                    width: 100%;
+
                     .benefit {
                         width: 48%;
                         padding: 1em 2%;
+                        word-wrap: break-word;
                         .banner-icon {
                             font-size: 1.5em;
                         }
@@ -802,7 +811,7 @@ input[type="button"],
 
     #two.banner {
         .content {
-            padding: 4em 1em;
+            padding: 2em 1em 4em;
             header {
                 h2 {
                     font-size: 1.5em;
@@ -817,6 +826,10 @@ input[type="button"],
     #three.banner {
         .content {
             padding: 4em 1em;
+            .image {
+                margin-bottom: 2em;
+            }
+
             header {
                 h2 {
                     font-size: 1.5em;
@@ -827,7 +840,7 @@ input[type="button"],
     
     #four.banner {
         .content {
-            padding: 4em 1em;
+            padding: 4em 1em 1em;
             header {
                 h2 {
                     font-size: 1.5em;
@@ -839,6 +852,7 @@ input[type="button"],
                 .feedback {
                     float: none;
                     width: 100%;
+                    margin-bottom: 2em;
                 }
             }
         }
@@ -873,6 +887,9 @@ input[type="button"],
                     input {
                         padding: 0 2.25em;
                     }
+                }
+                .button {
+                    padding: 0 2em;
                 }
             }
         }
