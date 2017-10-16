@@ -2771,10 +2771,12 @@ input[type="button"].green:hover,
   position: fixed; }
 
 #header .header-phone {
-  position: absolute;
+  position: fixed;
   top: 0.5em;
-  right: 1em;
-  z-index: 999; }
+  right: 1em; }
+  #header .header-phone a {
+    color: #C3BA00;
+    font-weight: 300; }
 
 /* Banner */
 #banner {
@@ -2794,10 +2796,11 @@ input[type="button"].green:hover,
       padding: 0.5em 1.5em;
       font-weight: bold; }
       #banner .content header h2 {
-        font-size: 3.2em;
+        font-size: 4em;
+        font-weight: bold;
         line-height: 1em; }
       #banner .content header .logo {
-        width: 280px; }
+        width: 350px; }
       #banner .content header h3 {
         display: inline;
         background: rgba(0, 0, 0, 0.5);
@@ -2870,7 +2873,7 @@ input[type="button"].green:hover,
         width: 7em;
         height: 7em;
         border-radius: 100%;
-        background: url(../../images/designer.jpg) no-repeat center center;
+        background: url(../../images/designer2.jpg) no-repeat center center;
         background-size: cover;
         margin: 1em auto 0; }
       #one.banner .content header .designer .designer-info {
@@ -2990,14 +2993,14 @@ input[type="button"].green:hover,
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
   text-align: center;
   z-index: 21; }
   #three.banner:before {
     content: '';
     display: inline-block;
-    height: 100vh;
+    height: 50vh;
     vertical-align: middle;
     width: 1%; }
   #three.banner:after {
