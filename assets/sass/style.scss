@@ -751,6 +751,26 @@ input[type="button"],
 
 @include breakpoint(xsmall) {
 
+    #header {
+        display: block;
+
+        h1 {
+            #logo {
+                width: 100px;
+                position: absolute;
+            }
+        }
+
+        .header-phone {
+            position: absolute;
+            line-height: 1.5em;
+            margin-top: 0;
+            a {
+                font-size: 0.8em;
+            }
+        }
+    }
+
     #banner {
         .content {
             margin-top: 0.5em;

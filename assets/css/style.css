@@ -3234,6 +3234,17 @@ input[type="button"].green:hover,
 /* Small */
 /* XSmall */
 @media screen and (max-width: 480px) {
+  #header {
+    display: block; }
+    #header h1 #logo {
+      width: 100px;
+      position: absolute; }
+    #header .header-phone {
+      position: absolute;
+      line-height: 1.5em;
+      margin-top: 0; }
+      #header .header-phone a {
+        font-size: 0.8em; }
   #banner .content {
     margin-top: 0.5em; }
     #banner .content header {
