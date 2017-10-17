@@ -3190,6 +3190,8 @@ input[type="button"].green:hover,
         font-size: 0.8em;
         font-style: italic;
         line-height: 1em; }
+      #five.banner .container form .button {
+        font-size: 1.25em; }
 
 #six {
   padding: 0;
@@ -3302,6 +3304,8 @@ input[type="button"].green:hover,
     #five.banner .container header .clock {
       zoom: 0.3;
       transform: scale(0.9); }
+      #five.banner .container header .clock .flip-clock-wrapper ul li a div div.inn {
+        font-size: 1em; }
     #five.banner .container p {
       width: 100%;
       margin: 0;

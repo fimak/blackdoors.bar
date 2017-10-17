@@ -660,6 +660,10 @@ input[type="button"],
                     font-style: italic;
                     line-height: 1em;
                 }
+
+                .button {
+                    font-size: 1.25em;
+                }
             }
         }
     }
@@ -893,6 +897,10 @@ input[type="button"],
                 .clock {
                     zoom: 0.3;
                     transform: scale(0.9);
+
+                    .flip-clock-wrapper ul li a div div.inn {
+                        font-size: 1em;
+                    }
                 }
             }
             p {
