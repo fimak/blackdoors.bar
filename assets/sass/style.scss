@@ -898,8 +898,8 @@ input[type="button"],
                     zoom: 0.3;
                     transform: scale(0.9);
 
-                    .flip-clock-wrapper ul li a div div.inn {
-                        font-size: 1em;
+                    &.flip-clock-wrapper ul li a div div.inn {
+                        font-size: 0.4em;
                     }
                 }
             }

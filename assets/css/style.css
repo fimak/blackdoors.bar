@@ -3304,8 +3304,8 @@ input[type="button"].green:hover,
     #five.banner .container header .clock {
       zoom: 0.3;
       transform: scale(0.9); }
-      #five.banner .container header .clock .flip-clock-wrapper ul li a div div.inn {
-        font-size: 1em; }
+      #five.banner .container header .clock.flip-clock-wrapper ul li a div div.inn {
+        font-size: 0.4em; }
     #five.banner .container p {
       width: 100%;
       margin: 0;
