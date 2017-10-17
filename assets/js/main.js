@@ -378,7 +378,7 @@
 //
 // })(jQuery)
 
-$(document).ready(function() {
+$(window).load(function() {
 
   // Carousel
   $(".owl-carousel").owlCarousel({
@@ -401,6 +401,9 @@ $(document).ready(function() {
       }
     }
   })
+})
+
+$(document).ready(function() {
 
   //FlipClock
   var clock = $('.clock').FlipClock({
