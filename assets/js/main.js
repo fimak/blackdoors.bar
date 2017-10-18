@@ -437,7 +437,7 @@ $(document).ready(function() {
     event.preventDefault()
     $.ajax({
       type: 'POST',
-      url: '/api/booking',
+      url: '/app/app.php',
       data: {
         name: $('#name').val(),
         phone: $('#phone').val()
