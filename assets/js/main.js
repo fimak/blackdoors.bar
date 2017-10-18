@@ -451,6 +451,11 @@ $(document).ready(function() {
         } else {
           alert(res.msg)
         }
+      },
+      error: function () {
+        $('#name').val('')
+        $('#phone').val('')
+        alert('Произошла ошибка на сервере.')
       }
     })
   })

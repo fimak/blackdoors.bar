@@ -12,22 +12,22 @@ $phone = $_POST['phone'];
 if ($name !== '' && $phone !== '') {
 	$message = "Имя: ${name}\nТелефон: ${phone}";
 
-	$response = $telegram->sendMessage([
+	$response = $telegram->sendMessage(array(
 	  'chat_id' => CHAT_ID, 
 	  'text' => $message
-	]);
+	));
 
 	$messageId = $response->getMessageId();
 
 	if ($messageId) {
-		echo json_encode([
+		echo json_encode(array(
 			'status' => 'success',
 			'msg' => $messageId
-		]);
+		));
 	}
 } else {
-	echo json_encode([
+	echo json_encode(array(
 		'status' => 'error',
 		'msg' => 'Введите имя и телефон' 
-	]);
+	));
 }
