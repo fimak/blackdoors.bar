@@ -442,10 +442,15 @@ $(document).ready(function() {
         name: $('#name').val(),
         phone: $('#phone').val()
       },
-      success: function () {
-        $('#name').val('')
-        $('#phone').val('')
-        alert('Спасибо, вам скоро перезвонят.')
+      success: function (response) {
+        const res = JSON.parse(response)
+        if (res.status === 'success') {
+          $('#name').val('')
+          $('#phone').val('')
+          alert('Спасибо, вам скоро перезвонят.')
+        } else {
+          alert(res.msg)
+        }
       }
     })
   })
