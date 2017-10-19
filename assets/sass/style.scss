@@ -10,7 +10,7 @@ a {
     cursor: pointer;
 
     &:hover {
-        color: #C3BA00 !important;
+        color: #CBAA31 !important;
         border-bottom-color: transparent;
     }
 }
@@ -37,9 +37,9 @@ input[type="button"],
     }
 
     &.yellow {
-        box-shadow: inset 0 0 0 1px #C3BA00;
+        box-shadow: inset 0 0 0 1px #CBAA31;
         color: #212121 !important;
-        background: #C3BA00;
+        background: #CBAA31;
         &:hover {
             background: #a59d00;
         }
@@ -72,14 +72,14 @@ input[type="button"],
 
         a {
             display: block;
-            background: rgba(204, 171, 30, 0.8);
+            background: rgba(203, 170, 49 0.8);
             border-radius: 4px;
             padding: 0 1em;
             color: #212121;
             font-weight: bold;
 
             &:hover {
-                background: rgba(204, 171, 30, 1);
+                background: rgba(203, 170, 49 1);
                 color: #000000 !important;
             }
         }
@@ -124,7 +124,7 @@ input[type="button"],
                 background: rgba(0, 0, 0, 0.5);
                 box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
                 padding: 0.4em 0.8em;
-                color: #C3BA00;
+                color: #CBAA31;
             }
         }
     }
@@ -615,7 +615,7 @@ input[type="button"],
                     margin: 0;
 
                     &:after {
-                        background: #C3BA00;
+                        background: #CBAA31;
                     }
                 }
 
@@ -670,7 +670,7 @@ input[type="button"],
 
                 .text-field {
                     margin: 2em;
-                    color: #C3BA00;
+                    color: #CBAA31;
                 }
 
                 p {
